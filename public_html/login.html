@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Resolução de pesquisas através de pesquisas de opinião" />
+    <meta name="keywords" content="pesquisa, opiniao, mercado digital">
+    <meta name="author" content="Marshmallow -14">
+
+    <title>Caixinha de opinião - ADMIN</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" />
+    </script>
+    <script type="text/javascript" src="js/bootstrap.min.js" />
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="card">
+        <article class="card-body">
+            <h4 class="card-title mb-4 mt-1">Login</h4>
+            <form>
+                <div class="form-group">
+                    <label>Nome de usuário</label>
+                    <input name="nome1" class="form-control" placeholder="Nome de usuário" type="text">
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input name="senha" class="form-control" placeholder="Digite sua senha" type="password">
+                </div>
+                <div class="form-group">
+                    <button name ="botao" onclick()= window.location.href = "admin.html" type="submit" class="btn btn-primary btn-block"> Entrar </button>
+                </div>
+            </form>
+        </article>
+    </div>
+
+    <script>
+        var inputNome = document.querySelector('input[name=nome1]');
+        var inputSenha = document.querySelector('input[name=senha]');
+        var btnLogin = document.querySelector('button[name=botao]');
+
+        if ((inputNome.value == admin) && (inputSenha.value == marshmallow)){
+            btnLogin.onclick = function(){
+                window.location.href = "admin.html";}
+            
+        } else{
+            alert('Senha incorreta');
+        }
+
+        
+
+    </script>
+
+
+</body>
+
+</html>

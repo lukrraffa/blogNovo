@@ -1,38 +1,65 @@
 <!Doctype html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
+        <meta name="description" content="Resolução de pesquisas através de pesquisas de opinião" />
+        <meta name="keywords" content="pesquisa, opiniao, mercado digital">
+        <meta name="author" content="Marshmallow -14">
+        
         <title>Caixinha de opinião</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js" /></script>
+        <script type="text/javascript" src="js/bootstrap.min.js" /></script>
 
+        
     </head>
     <body>
         <header>
+            <a href="index.html"><img src="imagens/logo.jpg""></a>
+            <h1>CAIXINHA DE OPINIÃO</h1>
+            
 
+            <nav>
+                <ul>
+                    <li><a href="login.html">CMS Admin</a></li>
+                </ul>
+            </nav>
         
         </header>
-
-        <nav>
-            <ul>
-                <li><a href="">CMS Admin</a></li>
-            </ul>
-
-
-        </nav>
+            <div class="alert-danger"><h1>lllll</h1></hq></div>
 
         <article>
 
-            <form method="POST" action="">
-                <input name="nome" type="text" pattern="" title="Digite seu nome" required/>
-                <input name="email" type="email" pattern="" title="Digite seu email" required/>
-                <input type="hidden" id="custId" name="custId" value="3487">
-           </form>
+            <p>Curtiu o conteúdo? Cadastre-se para receber mais informações! </p>
+            <form method="POST" action="URL do seu time">
+                <input
+                  name="name"
+                  type="text"
+                  pattern=""
+                  title="Digite seu nome completo"
+                  required
+                />
+                <input
+                  name="email"
+                  type="email"
+                  title="Digite um email válido"
+                  required
+                />
+                <input name="redirectTo" type="hidden" value="https://gama.academy" />
+                <input name="debugMode" type="hidden" value="true" />
+                <input type="submit" />
         </article>
 
         <footer> 
 
         </footer>
 
+        <script>
+            function login{
+            }
+        
+        </script>
     </body>
 </html>
