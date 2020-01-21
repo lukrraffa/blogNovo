@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .output {
+            width: 100%;
+            margin-left: 50%;
+        }
+
+        input[type=range] {
+            -webkit-appearance: none;
+            /* Hides the slider so that custom slider can be made */
+            height: 5px;
+            width: 100%;
+            cursor: pointer;
+            background: #07C;
+            margin-bottom: 10px;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border: 2px solid #07C;
+            height: 20px;
+            width: 20px;
+            border-radius: 20px;
+            background: #fff;
+            cursor: pointer;
+            margin-top: 0px;
+            /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+        }
+
+        input[type=range]:focus {
+            outline: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <input class="slider-bar" id="slider1" type="range" min="0" value="5" max="10" step="1"
+        list="ticks" oninput="Output1.value = slider1.value" /><br />
+    <output id="Output1" class="output">5</output>
+
+    <div>
+        <input name="gdskill[2]" id="gdskill2" type="range" min="0" value="0" max="10" step="1" list="ticks"
+            oninput="Output2.value = gdskill2.value" /><br />
+        <output id="Output2" class="output">0</output>
+    </div>
+
+    <datalist id="ticks">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+    </datalist>
+</body>
+
+</html>

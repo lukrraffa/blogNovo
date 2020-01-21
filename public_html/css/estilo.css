@@ -180,3 +180,26 @@ top: 1708px;
 
 background: url(christopher-gower-m_HRfLhgABo-unsplash.jpg);
 }
+
+/* --------------------- Nathan ---------------- */
+
+/* Formatação da imagem de na tela de Captura de Leads 2 */
+.imageCapturaLeads{
+    /* Deixar verde */
+    background: url(../imagens/papel_na_mesa.png) no-repeat;
+    background-position: center;
+    filter:hue-rotate(66deg) opacity(70%) drop-shadow(0 0 0rem green);
+    width: auto;
+    height: 200px;
+}
+
+/* Formatação da imagem de fundo de Login */
+#fundoLogin{
+    /* Deixar verde */
+    filter:hue-rotate(66deg) opacity(70%) drop-shadow(0 0 0rem green);
+    position: absolute;
+    margin-top: -27px;
+    overflow-y: none;
+}
+
+/* ------------------- Fim Nathan --------------- */

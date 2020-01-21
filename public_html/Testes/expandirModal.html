@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Formatação do número abaixo do slider */
+        .output {
+            width: 100%;
+            margin-left: 49%;
+            font-weight: bold;
+        }
+
+        /* Formatação da barra do slider */
+        input[type=range] {
+            -webkit-appearance: none;
+            /* Hides the slider so that custom slider can be made */
+            height: 5px;
+            width: 100%;
+            cursor: pointer;
+            background: rgb(0, 204, 92);
+            margin-bottom: 10px;
+        }
+
+        /* Formatação da bola do slider */
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            /* border: 2px solid rgb(0, 179, 80); */
+            height: 20px;
+            width: 20px;
+            border-radius: 20px;
+            background: rgb(0, 204, 92);
+            cursor: pointer;
+            margin-top: 0px;
+            /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+        }
+
+        /* Tirar foco de seleção do slider */
+        input[type=range]:focus {
+            outline: none;
+        }
+
+        /* Button used to open the chat form - fixed at the bottom of the page */
+        .open-button {
+            background-color: white;
+            color: black;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        /* The popup chat - hidden by default */
+        .chat-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+</head>
+
+<body>
+
+
+    <button class="open-button text-left" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);" onclick="openForm()"><h5>Dê seu Feedback</h5></button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="" class="form-container" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);">
+            <h5>Dê seu Feedback</h5>
+            <hr>
+            <div class="form-group">
+                <label>De 0 a 10, como você avalia o nosso conteúdo?</label>
+                <input class="slider-bar" id="slider1" type="range" min="0" value="5" max="10" step="1"
+                    oninput="Output1.value = slider1.value" /><br />
+                <output id="Output1" class="output">5</output>
+
+                <label>De 0 a 10, qual a possibilidade de você recomendar nosso conteúdo para um amigo?</label>
+                <input class="slider-bar" id="slider2" type="range" min="0" value="5" max="10" step="1"
+                    oninput="Output2.value = slider2.value" /><br />
+                <output id="Output2" class="output">5</output>
+            </div>
+
+            <div class="text-right">
+                <button type="button" class="btn btn-light" style="border-color: lightgray;" onclick="closeForm()">Cancelar</button>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
