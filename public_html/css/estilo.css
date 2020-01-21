@@ -202,4 +202,11 @@ background: url(christopher-gower-m_HRfLhgABo-unsplash.jpg);
     overflow-y: none;
 }
 
+#headerIndex{
+    background: url(../imagens/Rectangle.png) no-repeat;
+    background-position: center;
+    /* filter:hue-rotate(66deg) opacity(70%) drop-shadow(0 0 0rem green); */
+    width: auto;
+}
+
 /* ------------------- Fim Nathan --------------- */

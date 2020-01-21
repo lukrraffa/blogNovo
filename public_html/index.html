@@ -1,170 +1,366 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Resolução de pesquisas através de pesquisas de opinião" />
-  <meta name="keywords" content="pesquisa, opiniao, mercado digital">
-  <meta name="author" content="Marshmallow -14">
-
-  <title>Questione certo</title>
-
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    /* Header/logo Title */
+    .header {
+      margin-top: 20px;
+      padding: 45px;
+      color: white;
+    }
+
+    .mainMenu {
+      padding: 10px 65px;
+    }
+
+    .mainContent {
+      -ms-flex: 70%;
+      /* IE10 */
+      flex: 70%;
+      background-color: white;
+      padding: 65px;
+    }
+
+    /* Footer1 */
+    .footer1 {
+      padding: 100px;
+      text-align: center;
+      background: #14b614;
+      color: white;
+    }
+
+    /* Footer2 */
+    .footer2 {
+      padding: 15px;
+      text-align: center;
+      background: #2db92d;
+      color: white;
+      font-family: Helvetica, sans-serif, monospace;
+      font-size: 18px;
+    }
+
+    .postsPopulares {
+      padding: 0 10%;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      width: 100%;
+    }
+
+    .nextCard {
+      margin-top: 15px;
+    }
+
+    .card:hover {
+      box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: white;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #0275d8;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+
+    .topnav .search-container {
+      float: right;
+    }
+
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: 2px solid #5cb85c;
+      border-radius: 15px;
+    }
+
+    .topnav .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: white;
+      color: #5cb85c;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
-  <header>
 
-    <!--MENU-->
-    <div class="topo">
-      <nav class="navbar navbar-expand-sm">
-        <a class="navbar-brand" href="index.html"><img src="imagens/questione certo.JPG" width="170px"></a>
-        <ul class="navbar-nav">
-
-
-          <!--Botão Categorias-->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-              aria-expanded="false">
-              Categorias<span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu row">
-
-              <a href="#">Empreendedorismo</a>
-              <a href="#">Marketing</a>
-              <a href="#">Vendas</a>
-
-
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sobrenos.html">Sobre nós</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ebook.html">eBooks</a>
-          </li>
-          <li>
-
-            <form class="form-inline mt2 mt-md-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Digite" aria-label="Pesquisar">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-            </form>
-          </li>
-
-        </ul>
-      </nav>
-    </div>
-
-
-  </header>
-  <div>
-    <article class="container">
-      <img src="imagens/papel na mesa corte.png" class="rounded mx-auto d-block" width="400px">
-    </article>
-  </div>
-  <br>
-  <br>
   <div class="container-fluid">
-    <div class="col-sm6 col-md-4 col-lg-2">
-      <img class="icone" src="imagens/fusca.jpg" class="rounded float-right" width="300px">
-      <h1>Titulo</h1>
-      <p>Paragrafo</p>
-    </div>
-
-
-  </div>
-
-
-
-
-  <main class="container">
-
-    <!--Imagem do EBOOK-->
-    <article>
-
-      <div class="card bg-dark text-white">
-        <img class="card-img" src="..." alt="Card image">
-        <div class="card-img-overlay">
-
-          <h5 class="card-title">EBOOK:</h5>
-          <p class="card-text">Venda mais conhecendo seu cliente.</p>
-          <p class="card-text"><a href="ebook.html">Saiba mais</a></p>
-        </div>
-      </div>
-    </article>
-
-    <br>
-    <br>
-
-    <!--Cards-->
-    <article>
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Vendas</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="exemploVendas.html"" class=" card-link">Leia mais</a>
-        </div>
-      </div>
-    </article>
-
-    <br>
-
-    <article>
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Marketing</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="exemploMarketing.html" class="card-link">Leia mais</a>
-        </div>
-      </div>
-    </article>
-
-    <br>
-
-    <article>
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Empreendedorismo</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="exemploEmpreender.html" class="card-link">Leia mais</a>
-        </div>
-      </div>
-    </article>
-  </main>
-
-  <!--Rodapé-->
-  <footer class="container">
-    <div>
-      <p>Copyright - © 2020 - Questione Certo - Todos os Direitos Reservados </p>
-    </div>
-  </footer>
-
-  <div class="container">
-    <aside class="float-right">
-      <article>
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">TUTS TUTS</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Autor</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="card-link">Leia mais</a>
+    <!-- Menu -->
+    <div class="topnav" id="myTopnav">
+      <div class="row mainMenu">
+        <div class="col-md-4">
+          <div class="logo">
+            <a href="#"><img src="imagens/logo.png" alt="Logo" width="210"></a>
           </div>
         </div>
-      </article>
-    </aside>
+
+        <div class="col-md-4">
+          <div class="opcoesMenu">
+            <a href="#">Sobre Nós</a>
+            <a href="#">E-books</a>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="search-container">
+            <form action="">
+              <input type="text" placeholder="Pesquisar" name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Menu -->
+
+    <!-- Banner principal -->
+    <div class="mainMenu">
+      <div id="headerIndex" class="header ">
+        <div class="row">
+          <div class="col-md-8">
+            <h1><b>E-book: Venda mais<br>conhecendo seu cliente.</b></h1>
+          </div>
+
+          <div class="col-md-4" style="margin-top: 3%;">
+            <button type="button" class="btn btn-light"
+              style="float: left;;border-color: #5cb85c; color: #5cb85c;">Saiba Mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Banner principal -->
+
+    <!-- Conteúdo da Página -->
+    <div class="mainContent">
+      <div class="row">
+        <!-- Conteúdo do primeiro post -->
+        <div class="col-md-6 Post1" style="padding-right: 45px;">
+          <h2><b>Título da Postagem</b></h2>
+          <h5>Autor</h5>
+
+          <p class="text-justify">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud
+            exercitation ullamco.</p>
+        </div>
+
+        <!-- Imagem ao lado do primeiro post -->
+        <div class="col-md-6 imagemPost1">
+          <img src="imagens/fusca.jpg" alt="ImagemPost1" width="90%" height="290px">
+        </div>
+      </div>
+      <!-- Fim Conteúdo do primeiro post -->
+
+      <div class="row" style="margin-top: 7%;">
+        <!-- Cartões com Posts -->
+        <div class="col-md-6 cardsPosts">
+          <div class="card">
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="imagens/trem.jpg" alt="Img1" style="width:100%;">
+              </div>
+              <div class="col-sm-9" style="padding: 9px; padding-right: 15px;">
+                <h5>Título da Postagem</h5>
+                <h6>Autor</h6>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                  adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card nextCard">
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="imagens/lente_camera.jpg" alt="Img2" style="width:100%;">
+              </div>
+              <div class="col-sm-9" style="padding: 5px; padding-right: 25px;">
+                <h5>Título da Postagem</h5>
+                <h6>Autor</h6>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                  adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card nextCard">
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="imagens/pessoal_sentado.jpg" alt="Img3" style="width:100%;">
+              </div>
+              <div class="col-sm-9" style="padding: 5px; padding-right: 25px;">
+                <h5>Título da Postagem</h5>
+                <h6>Autor</h6>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                  adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Cartões com Posts -->
+
+        <!-- Posts Populares -->
+        <div class="col-md-6 postsPopulares text-justify">
+          <h2><b>Posts Populares</b></h2><br>
+          <div>
+            <h5>Título da Postagem</h5>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+              sed do
+              eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <hr>
+          <div>
+            <h5>Título da Postagem</h5>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+              sed do
+              eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <hr>
+          <div>
+            <h5>Título da Postagem</h5>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+              sed do
+              eiusmod
+              tempor incididunt ut labore et dolore magna aliqua..</p>
+          </div>
+          <hr>
+        </div>
+        <!-- Fim Posts Populares -->
+      </div>
+    </div>
+    <!-- Fim Conteúdo da Página -->
   </div>
+
+  <!-- Rodapés da página -->
+  <div class="footer1">
+    <div class="row">
+
+      <div class="col-md-6 text-justify">
+        <h3>Sobre Nós</h3>
+        <p>
+          Some quick example text to build on the card title and make up the bulk of the card's content. 
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </p>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <h3>Redes Sociais</h3>
+        <p>
+          <a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="color: white; font-size: xx-large; margin-right: 20px;"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true" style="color: white; font-size: xx-large;"></i></a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer2">
+    Copyrigth &copy; 2020 . Questione Certo . Todos os Direitos Reservados
+  </div>
+  <!-- Fim Rodapés -->
+
+  <!-- Função para alterar icone do menu em telas pequenas -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
