@@ -20,25 +20,33 @@
 </head>
 
 <body>
-
-    <div class="card">
-        <article class="card-body">
-            <h4 class="card-title mb-4 mt-1">Login</h4>
-            <form>
-                <div class="form-group">
-                    <label>Nome de usuário</label>
-                    <input name="nome1" class="form-control" placeholder="Nome de usuário" type="text">
-                </div>
-                <div class="form-group">
-                    <label>Senha</label>
-                    <input name="senha" class="form-control" placeholder="Digite sua senha" type="password">
-                </div>
-                <div class="form-group">
-                    <button name ="botao" onclick()= window.location.href = "admin.html" type="submit" class="btn btn-primary btn-block"> Entrar </button>
-                </div>
-            </form>
-        </article>
-    </div>
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="imagens/logo.jpg" width="120" height="40" class="d-inline-block align-top" alt="">
+      </a>
+      <a class="nav-link" href="index.html"><h4 class="float-right">HOME</h4></a>
+      
+    </nav>
+  
+    </header>
+    <br> <br> <br> <br> <br> <br> 
+    <article class="container">
+        <form >
+          <div class="form-group">
+           
+            <input type="email" class="form-control" id="nome1" aria-describedby="emailHelp"
+              placeholder="Nome ">
+            
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email1" aria-describedby="emailHelp"
+              placeholder="Senha ">
+          </div>
+          <button type="button" class="btn btn-light">Cancelar</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </form>
+      </article>
 
     <script>
         var inputNome = document.querySelector('input[name=nome1]');

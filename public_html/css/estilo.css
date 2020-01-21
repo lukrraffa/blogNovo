@@ -105,3 +105,78 @@ background: rgba(92, 184, 92, 0.5);
 
 
 
+/* ---------------------------- */
+/* Página de vendas, marketing, etc */
+
+h1 .titulo{
+position: absolute;
+width: 738px;
+height: 139px;
+left: 351px;
+top: 191px;
+
+font-family: Helvetica Neue;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 78px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+}
+
+p .titulo2{
+    position: absolute;
+width: 715px;
+height: 69px;
+left: 363px;
+top: 362px;
+
+font-family: Helvetica Neue;
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #777777;
+}
+
+.corpo{
+    position: absolute;
+width: 738px;
+height: 1562px;
+left: 351px;
+top: 1021px;
+
+font-family: HelveticaNeue;
+font-size: 21px;
+line-height: 25px;
+
+color: #000000;
+}
+
+img .modelo{
+    position: absolute;
+width: 1120px;
+height: 342px;
+left: 160px;
+top: 639px;
+
+background: linear-gradient(0deg, rgba(20, 182, 20, 0.42), rgba(20, 182, 20, 0.42)), url();
+}
+
+img .modelo2{
+    position: absolute;
+width: 742px;
+height: 257px;
+left: 349px;
+top: 1708px;
+
+background: url(christopher-gower-m_HRfLhgABo-unsplash.jpg);
+}
