@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+  
+</head>
+
+<body>
+<header>
+  <div class="container-fluid">
+    <!-- Menu -->
+    <div class="topnav" id="myTopnav">
+      <div class="row mainMenu">
+        <div class="col-md-4">
+          <div class="logo">
+            <a href="#"><img src="imagens/logo.png" alt="Logo" width="210"></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 ">
+          <div class="opcoesMenu">
+            <a href="#">Sobre Nós</a>
+            <a href="#">E-books</a>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="search-container">
+            <form action="">
+              <input type="text" placeholder="Pesquisar" name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+</header>
+    <!-- Menu -->
+
+    <!-- Banner principal -->
+    <section>
+    <div class="mainMenu">
+      <div id="headerIndex" class="header ">
+        <div class="row">
+          <div class="col-md-8">
+            <h1><b>E-book: Venda mais<br>conhecendo seu cliente.</b></h1>
+          </div>
+
+          <div class="col-md-4" style="margin-top: 3%;">
+            <button id="myBtn" type="button" class="btn btn-light"
+              style="float: left;;border-color: #5cb85c; color: #5cb85c;">Saiba Mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Modal do botão "Saiba Mais" -->
+     <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close text-right">&times;</span>
+          <form action="">
+            <div class="form-group">
+              <h3>Como vender mais com pesquisas (E-book)</h3>
+  
+              <br>
+              <div class="imageCapturaLeads"></div><br>
+  
+              <label>Seu nome completo:</label>
+              <input type="text" class="form-control" id="usuario" placeholder="Digite seu nome" required>
+              <br>
+              <label>Seu e-mail:</label>
+              <input type="email" class="form-control" id="senha" placeholder="Digite seu e-mail" required>
+  
+              <hr>
+              <div class="text-right">
+                <!-- <button type="button" class="btn btn-light" style="border-color: lightgray;">Cancelar</button> -->
+                <button type="submit" class="btn btn-success">Enviar para min</button>
+              </div>
+  
+            </div>
+          </form>
+        </div>
+      </div>
+      
+</section>
+    <!-- Fim Banner principal -->
+
+ 
+
+    
+
+
+
+  <!-- Rodapés da página -->
+  <div class="footer1">
+    <div class="row">
+
+      <div class="col-md-6 text-justify">
+        <h3>Sobre Nós</h3>
+        <p>
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </p>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <h3>Redes Sociais</h3>
+        <p>
+          <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"
+              style="color: white; font-size: xx-large; margin-right: 20px;"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"
+              style="color: white; font-size: xx-large;"></i></a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer2">
+    Copyrigth &copy; 2020 . Questione Certo . Todos os Direitos Reservados
+  </div>
+  <!-- Fim Rodapés -->
+
+  <!-- Função para alterar icone do menu em telas pequenas -->
+  
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/CapturaLeads.js"></script>
+</body>
+
+</html>
