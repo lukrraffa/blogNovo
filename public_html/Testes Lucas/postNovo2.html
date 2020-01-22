@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Questione certo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            margin-top: 20px;
+            padding: 45px;
+            color: white;
+        }
+
+        /* Increase the font size of the heading */
+        /* .header h1 {
+            font-size: 40px;
+        } */
+
+        /* Style the top navigation bar */
+        /* .navbar {
+            background-color: #333;
+        } */
+
+        /* Style the navigation bar links */
+        /* .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        } */
+
+        /* Right-aligned link */
+        /* .navbar a.right {
+            float: right;
+        } */
+
+        /* Change color on hover */
+        /* .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        } */
+
+        /* Column container */
+        /* .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        } */
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        /* .side {
+            -ms-flex: 30%;
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        } */
+
+        .mainMenu {
+            padding: 10px 65px;
+        }
+
+        /* Main column */
+        .mainContent {
+            -ms-flex: 70%;
+            /* IE10 */
+            flex: 70%;
+            background-color: white;
+            padding: 65px;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer1 */
+        .footer1 {
+            padding: 100px;
+            text-align: center;
+            background: #14b614;
+            color: white;
+        }
+
+        /* Footer2 */
+        .footer2 {
+            padding: 15px;
+            text-align: center;
+            background: #2db92d;
+            color: white;
+            font-family: Helvetica, sans-serif, monospace;
+            font-size: 18px;
+        }
+
+        .postsPopulares {
+            padding: 0 10%;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 100%;
+        }
+
+        .nextCard {
+            margin-top: 15px;
+        }
+
+        .card:hover {
+            box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        /* @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        } */
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        /* @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        } */
+
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #0275d8;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        .topnav .search-container {
+            float: right;
+        }
+
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: 2px solid #5cb85c;
+            border-radius: 15px;
+        }
+
+        .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: white;
+            color: #5cb85c;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="topnav" id="myTopnav">
+            <div class="row mainMenu">
+                <!-- Menu -->
+                <div class="col-md-4">
+                    <div class="logo">
+                        <a href="paginaPrincipal.html"><img src="../imagens/logo.png" alt="Logo" width="210"></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="opcoesMenu">
+                        <a href="#">Sobre Nós</a>
+                        <a href="capturaLeads2.html">E-books</a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="search-container">
+                        <form action="">
+                            <input type="text" placeholder="Pesquisar" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Banner principal -->
+        <div class="mainMenu">
+            <div id="headerIndex" class="header ">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1><b>E-book: Venda mais<br>conhecendo seu cliente.</b></h1>
+                    </div>
+
+                    <div class="col-md-4" style="margin-top: 3%;">
+                        <button type="button" class="btn btn-light"
+                            style="float: left;;border-color: #5cb85c; color: #5cb85c;"><a href="capturaLeads2.html">Saiba Mais</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Artigo-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="mainContent">
+            <div class="row">
+                <!-- Conteúdo do primeiro post -->
+                <div class="col-md-6 Post1" style="padding-right: 45px;">
+                    <h2><b>Pesquisa
+                        </b></h2>
+                    <h5><b>Questione certo</b></h5>
+
+                    <p class="text-justify">A Questione Certo! está chegando com uma nova proposta em pesquisa de mercado e,
+                        para isso, contamos com a sua ajuda! Ninguém melhor do que nós para sabermos a
+                        importância de ouvir nosso público-alvo para entender suas necessidades e buscar
+                        soluções mais precisas e eficientes. Por isso, precisamos de 2 minutos do seu tempo para
+                        responder a essas perguntinhas.
+                        </p>
+                        <p class="text-justify">Desde já, ficamos muito agradecidos pela sua disponibilidade. Em sinal disso, criamos um
+                            mini-ebook com perguntas-chave para a sua próxima pesquisa, aproveite!                            
+                            </p>
+                </div>
+
+                <!-- Imagem ao lado do primeiro post -->
+                <div class="col-md-6 imagemPost1">
+                    <img src="../imagens/fusca.jpg" alt="ImagemPost1" width="90%" height="290px">
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <br>
+
+
+
+
+
+        <div class="container-fluid modal-dialog modal-dialog-centered">
+            <form action=""
+                style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); padding: 10px; width: 500px; background-color: white;">
+                <div class="form-group"></div>
+                <div class="main">
+                    <div class="row"></div>
+
+
+                    <h2><b>Vamos lá! </b></h2>
+                    <p>1) Qual é o seu papel na empresa?
+                        a) Presidente, CEO, COO, CTO Diretor geral
+                        b) Gerente, coordenador;
+                        c) Analista, assistente;
+                        d) Estagiário</p>
+
+                    <p>2) Em qual faixa etária você se enquadra?
+                        a) menos de 20 anos
+                        b) entre 20 e 30 anos
+                        c) entre 30 e 40 anos
+                        d) entre 40 e 50 anos
+                        e) acima de 50 anos
+                        </p>
+
+                        <p>3) Em qual segmento a sua empresa se encaixa melhor?
+                            a) Indústria
+                            b) Comércio
+                            c) Tecnologia
+                            d) Serviços não tecnológicos
+                            e) Pública
+                            f) Terceiro setor
+                            
+                        </p>
+
+                        <p>4) Qual é o tipo de cliente que a sua empresa atende?
+                            a) cliente final (B2C)
+                            b) empresas (B2B)
+                            c) ambos
+                            
+                        </p>
+
+                        <p>5) O quanto você conhece sobre pesquisa de mercado?
+                            a) nunca ouvi falar
+                            b) já ouvi falar mas não sei explicar o que é
+                            c) conheço o conceito mas nunca apliquei
+                            d) conheço o conceito e já tive alguma experiência com ele
+                            e) utilizo a pesquisa de mercado em meu dia a dia
+                            
+                        </p>   
+                        
+                        <p>6) Quão importante você considera que a pesquisa de mercado é para um negócio?
+                            a) Nada importante
+                            b) Pouco importante
+                            c) Importante
+                            d) Muito importante
+                            e) Indispensável
+                            
+                        </p>   
+
+                    
+                </div>
+
+
+        </div>
+    </div>
+    <br>
+
+    </div>
+    </form>
+    </div>
+
+
+    <!--Fim do título-->
+
+    <div class="row">
+        <!-- Conteúdo do primeiro post -->
+        <div class="col-md-5 Post1">
+            <h2><b>Veja mais conteúdos:</b></h2>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+
+
+    </div>
+
+    <div class="row">
+        <!-- Cartões com Posts -->
+        <div class="col-md-6 cardsPosts">
+            <div class="card">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="../imagens/trem.jpg" alt="Img1" style="width:100%;">
+                    </div>
+                    <div class="col-sm-9" style="padding: 5px;">
+                        <h5>Pesquisa</h5>
+                        <h6>Questione certo</h6>
+                        <p>A Questione Certo! está chegando com uma nova proposta em pesquisa de mercado e,
+                            para isso, contamos com a sua ajuda! Ninguém melhor do que nós para sabermos a
+                            importância de ouvir nosso público-alvo para entender suas necessidades e buscar
+                            soluções mais precisas e eficientes.</p>
+                            <a href="postNovo2.html">Veja mais</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card nextCard">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="../imagens/pessoal_sentado.jpg" alt="Img3" style="width:100%;">
+                    </div>
+                    <div class="col-sm-9" style="padding: 5px;">
+                        <h5>Você está decidindo certo na sua
+                            empresa?</h5>
+                        <h6>Questione certo</h6>
+                        <p>Como gestor, você já deve saber a importância de ter dados e informações seguras para
+                            embasar as decisões do dia a dia, não é mesmo. Mas será que essas informações estão
+                            vindo do lugar certo?
+                           <a href="postNovo.html">Veja mais</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+     <!-- Banner principal -->
+     <div class="mainMenu">
+        <div id="headerIndex" class="header ">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1><b>E-book: Venda mais<br>conhecendo seu cliente.</b></h1>
+                </div>
+
+                <div class="col-md-4" style="margin-top: 3%;">
+                    <button type="button" class="btn btn-light"
+                        style="float: left;;border-color: #5cb85c; color: #5cb85c;"><a href="capturaLeads2.html">Saiba Mais</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapés da página -->
+    <div class="footer1">
+        <div class="row">
+
+
+            <div class="col-md-6">
+                <h2>Footer</h2>
+            </div>
+
+            <div class="col-md-6">
+                <h2>Footer</h2>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        Copyrigth &copy; 2020 . Questione Certo . Todos os Direitos Reservados
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
