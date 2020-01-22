@@ -1,0 +1,11 @@
+Lucas Rafael: Contribuiu com base e telas básicas, criou repositório no git
+e ajudou em algumas telas utilizando bootstrap  
+
+Nathan: Contribuiu com telas, otimizou tudo utilizando bootstrap e css
+puro, e js.
+
+Wellington: Contribuiu com telas, imagens, auxiliou no git e 
+vários processos, e nas telas utilizou o bootstrap.
+
+OBS: Todos participaram e auxiliaram em basicamente todos os processos
+do desenvolvimento.
