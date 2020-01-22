@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
+</head>
+
+<body>
+
+    <div id="page" class="container-fluid">
+        <!-- Menu -->
+        <div class="topnav" id="myTopnav">
+            <div class="mainMenu">
+
+                <!-- <div class="col-md-4"> -->
+                <div class="logo">
+                    <a href="#"><img src="imagens/logo.png" alt="Logo" width="210"></a>
+                </div>
+                <!-- </div> -->
+
+                <!-- <div class="col-md-4"> -->
+                <div class="opcoesMenu">
+                    <a href="#">Sobre Nós</a>
+                    <a href="#">E-books</a>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <!-- </div> -->
+
+                <!-- <div class="col-md-4"> -->
+                <!-- <div class="search-container"> -->
+                <!-- <form action="">
+              <input type="text" placeholder="Pesquisar" name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form> -->
+                <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <div class="col-md-1"> -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" style="font-size: xx-large;"></i>
+                </a>
+                <!-- </div> -->
+
+            </div>
+        </div>
+        <!-- Menu -->
+
+        <!-- Banner principal -->
+        <div class="mainMenu">
+            <div id="headerIndex" class="header ">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1><b>E-book: Venda mais<br>conhecendo seu cliente.</b></h1>
+                    </div>
+
+                    <div class="col-md-4" style="margin-top: 3%;">
+                        <button type="button" class="myBtn btn btn-light"
+                            style="float: left;;border-color: #5cb85c; color: #5cb85c;">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Banner principal -->
+
+        <!-- Modal do botão "Saiba Mais" (Captura de Leads) -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close text-right">&times;</span>
+                <form method="POST" action="https://smtl.gama.academy/leads/f5d1c3f0-39f4-11ea-96ea-713ae26a8736">
+
+                    <h4>Como vender mais com pesquisas (E-book)</h4>
+
+                    <br>
+                    <div class="imageCapturaLeads"></div>
+                    <br>
+
+                    <label>Seu nome completo:</label>
+                    <input id="nome" class="form-control" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$"
+                        title="Digite seu nome completo" required />
+                    <br>
+                    <label>Seu e-mail:</label>
+                    <input id="email" class="form-control" name="email" type="email" title="Digite um email válido"
+                        required />
+
+                    <hr>
+
+
+
+                    <input name="redirectTo" type="hidden" value="https://gama.academy" />
+                    <input id="a" name="debugMode" type="hidden" value="true" />
+
+                    <input id="b" class="btn btn-success" type="submit" />
+
+
+
+                </form>
+            </div>
+        </div>
+
+        <!--Artigo-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="mainContent">
+            <div class="row">
+                <!-- Conteúdo do primeiro post -->
+                <div class="col-md-6 Post1" style="padding-right: 45px;">
+                    <h2><b>Você está tomando as decisões certas na sua
+                            empresa?
+                        </b></h2>
+                    <h5>Questione certo</h5>
+
+                    <p class="text-justify">Como gestor, você já deve saber a importância de ter dados e informações
+                        seguras para
+                        embasar as decisões do dia a dia, não é mesmo. Mas será que essas informações estão
+                        vindo do lugar certo? Será que elas são confiáveis? Será que você está tomando decisões
+                        equivocadas todo esse tempo?
+                        Calma! Responda esse quiz e descubra o quanto você domina sobre pesquisa de mercado</p>
+                </div>
+
+                <!-- Imagem ao lado do primeiro post -->
+                <div class="col-md-6 imagemPost1">
+                    <img src="../imagens/fusca.jpg" alt="ImagemPost1" width="90%" height="290px">
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <br>
+
+
+
+
+
+        <div class="container-fluid modal-dialog modal-dialog-centered">
+            <form action=""
+                style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); padding: 10px; width: 500px; background-color: white;">
+                <div class="form-group"></div>
+                <div class="main">
+                    <div class="row"></div>
+
+
+                    <h2><b>Questões do quiz</b></h2>
+                    <p>1) Como você faz para conhecer o perfil dos seus clientes?
+                        a) Você supõe com base na sua experiência de mercado
+                        b) Você utiliza os dados das redes sociais da empresa para ter um
+                        embasamento?
+                        c) Você tem uma caixinha de sugestões, vez ou outra, alguém responde?
+                        d) Você elabora um questionário e envia para a sua base de clientes?</p>
+
+                    <p>2) Quando vai lançar um novo produto ou serviço, você:
+                        a) Já sabe do que os clientes gostam e confia no seu feeling?
+                        b) Observa o comportamento dos clientes e as sugestões que eles dão por
+                        email e redes sociais?
+                        c) Analisa os dados de vendas dos últimos períodos e busca encontrar uma
+                        tendência que justifique o lançamento desse novo produto?
+                        d) Busca a maior quantidade de informações possíveis antes de formatar o no
+                        produto ou serviço e faz validações junto aos clientes?
+                    </p>
+
+                    <p>3) Se a sua empresa recebesse um aporte nesse momento, qual seria a primeira
+                        providência a ser tomada?
+                        a) Quitar todas as dívidas e fazer um happy hour especial para motivar os
+                        colaboradores
+                        b) Destinar a maior parte da verba recebida em um novo projeto para a
+                        expansão da empresa no mercado
+                        c) Dividir o dinheiro proporcionalmente entre as principais necessidades
+                        percebidas internamente, como pagamento de dívidas, investimento em
+                        maquinários, etc.
+                        d) Entender como está o mercado e como esse valor pode ser utilizado de
+                        forma mais inteligente.
+                    </p>
+
+                    <p>4) As vendas começam a cair e isso vem se repetindo mês após mês. Como gestor da
+                        empresa, você:
+                        a) Começa a cortar gastos e demitir pessoas antes que a situação fique pior, já
+                        que provavelmente a culpa é do mercado em baixa
+                        b) Senta com seus vendedores e cobra justificativas e um plano de ação para
+                        reverter o problema
+                        c) Começa a acompanhar as notícias da economia para ver se é um problema
+                        generalizado ou apenas da sua empresa e, a partir disso, busca ações que
+                        revertam o quadro
+                        d) Busca compreender o cenário do mercado e como a sua empresa se coloca
+                        em relação a ele, analisa concorrentes, faz pesquisas junto aos clientes e
+                        assegura a captação de informações de diferentes pontos de vista
+
+                    </p>
+
+                    <p>5) A sua empresa apresenta praticamente o mesmo resultado financeiro todos os anos.
+                        Isso é:
+                        a) Muito bom, afinal ela não está caindo
+                        b) Bom, mas estranho, quem sabe não dê para melhorar
+                        c) Ruim, pois está faltando esforços para o crescimento
+                        d) Um ponto de atenção importante que precisa ser investigado mais a fundo
+                        para entender se é um sinal positivo frente a um mercado em queda ou
+                        negativo, por falta de inovação ou novas oportunidades.
+
+                    </p>
+
+
+
+
+
+
+                    <h2><b>Lógica do quiz</b></h2>
+                    <p>As alternativas representam o nível de necessidade de de um auxílio na pesquisa de
+                        mercado. As opções variam da maior necessidade até a menor, em ordem alfabética.
+                        Dessa forma, a maior pontuação é alcançada por quem responde todas as questões com a
+                        alternativa d, e, as demais, seguem um padrão proporcional conforme abaixo:
+                        A. equivale a 25%
+                        B. equivale a 50%
+                        C. equivale a 75%
+                        D. equivale a 100%
+                        Ao final, a pontuação deve ser somada para obtenção do percentual obtido. Como resposta
+                        ao quiz, teremos:
+                        <ul>
+                            <li> percentual abaixo de 50% – A sua empresa está correndo sérios riscos!!! Procure
+                                pela ajuda de uma empresa especializada antes que algo de ruim aconteça! </li>
+                            <li>percentual entre 50% e 75% – Você tem alguma noção do que precisa ser feito, mas
+                                ainda precisa de ajuda em alguns pontos. </li>
+                            <li> percentual entre 75% e 90% – Você está no caminho certo e já toma algumas
+                                decisões de forma mais segura. Contudo, desafios maiores pedirão um nível melhor
+                                de conhecimento </li>
+                            <li>percentual acima de 90% – A sua empresa tem muita sorte em ter você! Sabe o que
+                                precisa fazer para levá-la sempre além e seguir uma trajetória de muito sucesso! </li>
+                        </ul>
+                    </p>
+
+
+
+                </div>
+
+
+        </div>
+    </div>
+    <br>
+
+    </div>
+    </form>
+    </div>
+
+
+    <!--Fim do título-->
+
+    <div class="row">
+        <!-- Conteúdo do primeiro post -->
+        <div class="col-md-5 Post1">
+            <h2><b>Veja mais conteúdos:</b></h2>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+
+
+    </div>
+
+    <div class="row">
+        <!-- Cartões com Posts -->
+        <div class="col-md-6 cardsPosts">
+            <div class="card">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="imagens/trem.jpg" alt="Img1" style="width:100%;">
+                    </div>
+                    <div class="col-sm-9" style="padding: 5px;">
+                        <h5>Pesquisa</h5>
+                        <h6>Questione certo</h6>
+                        <p>A Questione Certo! está chegando com uma nova proposta em pesquisa de mercado e,
+                            para isso, contamos com a sua ajuda! Ninguém melhor do que nós para sabermos a
+                            importância de ouvir nosso público-alvo para entender suas necessidades e buscar
+                            soluções mais precisas e eficientes.</p>
+                        <a href="postNovo2.html">Veja mais</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card nextCard">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="imagens/pessoal_sentado.jpg" alt="Img3" style="width:100%;">
+                    </div>
+                    <div class="col-sm-9" style="padding: 5px;">
+                        <h5>Você está decidindo certo na sua
+                            empresa?</h5>
+                        <h6>Questione certo</h6>
+                        <p>Como gestor, você já deve saber a importância de ter dados e informações seguras para
+                            embasar as decisões do dia a dia, não é mesmo. Mas será que essas informações estão
+                            vindo do lugar certo?
+                            <a href="postNovo.html">Veja mais</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+    <!-- Banner principal -->
+    <div class="mainMenu">
+        <div id="headerIndex" class="header ">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1><b>E-book: Venda mais<br>conhecendo seu cliente.</b></h1>
+                </div>
+
+                <div class="col-md-4" style="margin-top: 3%;">
+                    <button type="button" class="btn btn-light"
+                        style="float: left;;border-color: #5cb85c; color: #5cb85c;"><a href="capturaLeads2.html">Saiba
+                            Mais</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Conteúdo da página-->
+    <!--Artigo-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="mainContent">
+        <div class="row">
+            <!-- Conteúdo do primeiro post -->
+            <div class="col-md-6 Post1" style="padding-right: 45px;">
+                <h2><b>Pesquisa
+                    </b></h2>
+                <h5><b>Questione certo</b></h5>
+
+                <p class="text-justify">A Questione Certo! está chegando com uma nova proposta em pesquisa de mercado e,
+                    para isso, contamos com a sua ajuda! Ninguém melhor do que nós para sabermos a
+                    importância de ouvir nosso público-alvo para entender suas necessidades e buscar
+                    soluções mais precisas e eficientes. Por isso, precisamos de 2 minutos do seu tempo para
+                    responder a essas perguntinhas.
+                </p>
+                <p class="text-justify">Desde já, ficamos muito agradecidos pela sua disponibilidade. Em sinal disso,
+                    criamos um
+                    mini-ebook com perguntas-chave para a sua próxima pesquisa, aproveite!
+                </p>
+            </div>
+
+            <!-- Imagem ao lado do primeiro post -->
+            <div class="col-md-6 imagemPost1">
+                <img src="../imagens/fusca.jpg" alt="ImagemPost1" width="90%" height="290px">
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <br>
+
+
+
+
+
+    <div class="container-fluid modal-dialog modal-dialog-centered">
+        <form action=""
+            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); padding: 10px; width: 500px; background-color: white;">
+            <div class="form-group"></div>
+            <div class="main">
+                <div class="row"></div>
+
+
+                <h2><b>Vamos lá! </b></h2>
+                <p>1) Qual é o seu papel na empresa?
+                    a) Presidente, CEO, COO, CTO Diretor geral
+                    b) Gerente, coordenador;
+                    c) Analista, assistente;
+                    d) Estagiário</p>
+
+                <p>2) Em qual faixa etária você se enquadra?
+                    a) menos de 20 anos
+                    b) entre 20 e 30 anos
+                    c) entre 30 e 40 anos
+                    d) entre 40 e 50 anos
+                    e) acima de 50 anos
+                </p>
+
+                <p>3) Em qual segmento a sua empresa se encaixa melhor?
+                    a) Indústria
+                    b) Comércio
+                    c) Tecnologia
+                    d) Serviços não tecnológicos
+                    e) Pública
+                    f) Terceiro setor
+
+                </p>
+
+                <p>4) Qual é o tipo de cliente que a sua empresa atende?
+                    a) cliente final (B2C)
+                    b) empresas (B2B)
+                    c) ambos
+
+                </p>
+
+                <p>5) O quanto você conhece sobre pesquisa de mercado?
+                    a) nunca ouvi falar
+                    b) já ouvi falar mas não sei explicar o que é
+                    c) conheço o conceito mas nunca apliquei
+                    d) conheço o conceito e já tive alguma experiência com ele
+                    e) utilizo a pesquisa de mercado em meu dia a dia
+
+                </p>
+
+                <p>6) Quão importante você considera que a pesquisa de mercado é para um negócio?
+                    a) Nada importante
+                    b) Pouco importante
+                    c) Importante
+                    d) Muito importante
+                    e) Indispensável
+
+                </p>
+
+
+            </div>
+
+
+    </div>
+    </div>
+    <br>
+
+    </div>
+    </form>
+    </div>
+
+
+    <!--Fim do título-->
+
+    <div class="row">
+        <!-- Conteúdo do primeiro post -->
+        <div class="col-md-5 Post1">
+            <h2><b>Veja mais conteúdos:</b></h2>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+
+
+    </div>
+
+    <div class="row">
+        <!-- Cartões com Posts -->
+        <div class="col-md-6 cardsPosts">
+            <div class="card">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="../imagens/trem.jpg" alt="Img1" style="width:100%;">
+                    </div>
+                    <div class="col-sm-9" style="padding: 5px;">
+                        <h5>Pesquisa</h5>
+                        <h6>Questione certo</h6>
+                        <p>A Questione Certo! está chegando com uma nova proposta em pesquisa de mercado e,
+                            para isso, contamos com a sua ajuda! Ninguém melhor do que nós para sabermos a
+                            importância de ouvir nosso público-alvo para entender suas necessidades e buscar
+                            soluções mais precisas e eficientes.</p>
+                        <a href="postNovo2.html">Veja mais</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card nextCard">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="../imagens/pessoal_sentado.jpg" alt="Img3" style="width:100%;">
+                    </div>
+                    <div class="col-sm-9" style="padding: 5px;">
+                        <h5>Você está decidindo certo na sua
+                            empresa?</h5>
+                        <h6>Questione certo</h6>
+                        <p>Como gestor, você já deve saber a importância de ter dados e informações seguras para
+                            embasar as decisões do dia a dia, não é mesmo. Mas será que essas informações estão
+                            vindo do lugar certo?
+                            <a href="postNovo.html">Veja mais</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+    <!--Fim do conteúdo da página-->
+
+    <!-- Banner principal -->
+    <div class="mainMenu">
+        <div id="headerIndex" class="header ">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1><b>E-book: Venda mais<br>conhecendo seu cliente.</b></h1>
+                </div>
+
+                <div class="col-md-4" style="margin-top: 3%;">
+                    <button type="button" class="btn btn-light"
+                        style="float: left;;border-color: #5cb85c; color: #5cb85c;"><a href="capturaLeads2.html">Saiba
+                            Mais</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Rodapés da página -->
+    <div id="footer">
+        <div class="footer1">
+            <div class="row">
+
+                <div class="col-md-6 text-justify">
+                    <h3>Sobre Nós</h3>
+                    <p>
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                        Some quick example text to build on the card title and make up the bulk of the card's content.
+                    </p>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <h3>Redes Sociais</h3>
+                    <p>
+                        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"
+                                style="color: white; font-size: xx-large; margin-right: 20px;"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"
+                                style="color: white; font-size: xx-large;"></i></a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer2">
+            Copyrigth &copy; 2020 . Questione Certo . Todos os Direitos Reservados
+        </div>
+    </div>
+    </div>
+    <!-- Fim Rodapés -->
+
+    <!-- Função para alterar icone do menu em telas pequenas -->
+    <<<<<<< HEAD <script>
+        // Mudar o menu quando estiver em dispositvos Mobile
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+        }
+
+        // Capturar o modal
+        var modal = document.getElementById("myModal");
+
+        // Capturar o botão que abre o modal
+        var btn1 = document.getElementsByClassName("myBtn")[0];
+        var btn2 = document.getElementsByClassName("myBtn")[1];
+
+        // Capturar o elemento para fechar o modal
+        var span1 = document.getElementsByClassName("close")[0];
+        var span2 = document.getElementsByClassName("close")[1];
+
+        // Abrir/Mostrar o modal
+        btn1.onclick = function () {
+        modal.style.display = "block";
+        }
+
+        btn2.onclick = function () {
+        modal.style.display = "block";
+        }
+
+        // Fechar o modal quando clicado no (V)
+        span1.onclick = function () {
+        modal.style.display = "none";
+        }
+
+        span2.onclick = function () {
+        modal.style.display = "none";
+        }
+
+        // $.ajax({
+        // type: "POST",
+        // url: "https://smtl.gama.academy/leads/f5d1c3f0-39f4-11ea-96ea-713ae26a8736",
+        // data: data,
+        // });
+
+        </script>
+        =======
+
+        >>>>>>> Organização do codigo
+
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/CapturaLeads.js"></script>
+</body>
+
+</html>

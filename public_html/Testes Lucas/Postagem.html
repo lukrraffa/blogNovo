@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <!-- Menu -->
+            <div class="topnav" id="myTopnav">
+                <div class="row mainMenu">
+                    <div class="col-md-4">
+                        <div class="logo">
+                            <a href="paginaPrincipal.html"><img src="imagens/logo.png" alt="Logo" width="210"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <div class="opcoesMenu">
+                            <a href="#">Sobre Nós</a>
+                            <a href="capturaLeads2.html">E-books</a>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="search-container">
+                            <form action="">
+                                <input type="text" placeholder="Pesquisar" name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+
+    <!-- Banner principal -->
+
+    <div class="mainMenu">
+        <div id="headerIndex" class="header ">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>
+                        <b>E-book: Venda mais
+                            <br>
+                            conhecendo seu cliente.</b></h1>
+                </div>
+
+                <div class="col-md-4" style="margin-top: 3%;">
+                    <button id="myBtn" type="button" class="btn btn-light"
+                        style="float: left;;border-color: #5cb85c; color: #5cb85c;">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal do botão "Saiba Mais" -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close text-right">&times;</span>
+            <form method = "POST" action="https://smtl.gama.academy/leads/f5d1c3f0-39f4-11ea-96ea-713ae26a8736">
+                <div class="form-group">
+                    <h3>Como vender mais com pesquisas (E-book)</h3>
+
+                    <br>
+                    <div class="imageCapturaLeads"></div><br>
+
+                    <label>Seu nome completo:</label>
+                    <input
+                    name="name"
+                    type="text"
+                    pattern="^\D{2,}\s[\D\s]{2,}$"
+                    title="Digite seu nome completo"
+                    required
+                  />
+                    <br>
+                    <label>Seu e-mail:</label>
+                    <input
+                  name="email"
+                  type="email"
+                  title="Digite um email válido"
+                  required
+                />
+                <input name="redirectTo" type="hidden" value="https://gama.academy" />
+                <input name="debugMode" type="hidden" value="true" />
+
+                </div>
+            </form>
+
+            <form method="POST" action="URL do seu time">
+                <input
+                  name="name"
+                  type="text"
+                  pattern="^\D{2,}\s[\D\s]{2,}$"
+                  title="Digite seu nome completo"
+                  required
+                />
+                <input
+                  name="email"
+                  type="email"
+                  title="Digite um email válido"
+                  required
+                />
+                <input name="redirectTo" type="hidden" value="https://gama.academy" />
+                <input name="debugMode" type="hidden" value="true" />
+                <input type="submit" />
+              </form>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        
+        <main role="row" class="container">
+            <div class="row">
+                <div class="col-md-8 blog-main">
+                    <h3 class="pb-3 mb-4 font-italic border-bottom">
+                        Postagem
+                    </h3>
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">Conhecendo o Mercado</h2>
+                        <p class="blog-post-meta">"Escrito por'
+                            <a href="#">Marshmallow-14</a>", em 22 de Janeiro de 2020"
+                        </p>
+                        <p>Este conteudo fornece questionamentos a quem esta pensando em empreender no atual mercado
+                        </p>
+                        <p>Antes de lançar um novo produto ou serviço no mercado, é fundamental saber o que os
+                            consumidores estão buscando. A melhor forma de fazer isso é perguntando diretamente a
+                            eles. Mas como montar uma pesquisa de opinião que gere o retorno que você precisa? É o
+                            que vamos explicar, neste artigo!
+                            Veja quais são os cuidados que devem ser tomados na hora de elaborar a sua pesquisa para
+                            que ela fique mais atrativa para os respondentes e forneça todas as informações que o
+                            seu negócio precisa para fazer um lançamento de sucesso.
+                        </p>
+                        <h3>1. Capriche na introdução da sua pesquisa de opinião </h3>
+
+                        <p>
+                            A introdução é o primeiro contato que o respondente terá com a sua pesquisa de opinião e,
+                            como diz o ditado, “a primeira impressão é a que fica”. Por isso, é essencial que ela seja
+                            clara em mostrar seu objetivo e seja persuasiva o suficiente para que o leitor se interesse
+                            em respondê-la.
+
+                        </p>
+                        <h3>
+                            2. Fique atento às opções de resposta em questões fechadas
+                        </h3>
+                        <p>
+                            Tome bastante cuidado ao elaborar as questões fechadas para que as alternativas de respostas
+                            não se repitam e gerem informações de valor. Opções como “todas ou nenhumas das alternativas
+                            anteriores” devem ser evitadas para que o resultado da pesquisa seja mais preciso e
+                            específico.
+                        </p>
+                        <h3>3. Limite a quantidade de perguntas por página
+                        </h3>
+                        <p>
+                            Tenha cuidado com a quantidade de perguntas dispostas em cada página. As pessoas tendem a
+                            desanimar ao perceber que a tarefa a ser executada é mais demorada ou extensa. Por esse
+                            motivo, o ideal distribuir as questões de forma a suavizar essa impressão. Assim, será mais
+                            difícil que o respondente desista antes de chegar ao final.
+
+                        </p>
+                        <h3>
+                            4. Evite criar pesquisas muito longas
+
+                        </h3>
+                        <p>
+                            Outro ponto muito importante em relação ao tamanho da pesquisa está relacionada ao tempo
+                            gasto para respondê-las. As pessoas não dispõem de muitas horas vagas ao longo do dia, então
+                            a sua pesquisa não pode ser muito longa. Uma boa dica é fazer testes cronometrados para
+                            refinar as questões e evitar que elas se tornem desinteressantes.
+
+
+                        </p>
+                        <h3>
+                            5. Utilize uma linguagem adequada
+
+                        </h3>
+                        <p>
+                            Se coloque no lugar do entrevistado. A utilização de um vocabulário simples e sem jargões é
+                            muito mais proveitosa, uma vez que, uma linguagem muito técnica ou rebuscada pode confundir
+                            o público e afetar seus resultados. Cuide para não utilizar linguagem indutiva, pois ela
+                            gera resultados previsíveis e de pouca utilidade para sua análise.
+
+                        </p>
+                        <h3>
+
+                            6. Revise a pesquisa de opinião antes de enviá-la
+
+                        </h3>
+                        <p>
+                            Antes de fazer o envio, certifique-se de que a pesquisa foi devidamente revisada sob dois
+                            aspectos principais. O primeiro é relativo ao conteúdo, veja se todas as questões estão
+                            claras e objetivas, se as alternativas geram valor para a sua análise e se a quantidade de
+                            perguntas está adequada.
+                            O segundo é sobre a parte gramatical e ortográfica. Erros dessa natureza acabam afetando a
+                            credibilidade da empresa e a adesão de respondentes. Para ambos os pontos, é fundamental
+                            contar com a ajuda de alguém que ainda não tenha visto o questionário e possa trazer uma
+                            visão diferenciada sobre ele.
+                            Seguindo estas 6 dicas você conseguirá montar uma pesquisa de opinião muito mais eficiente
+                            para o lançamento do seu produto ou serviço. Então, não deixe de se atentar a cada uma delas
+                            para obter as informações certas para o seu negócio!
+                            Se você gostou do conteúdo e quer se aprofundar nesse assunto, temos uma indicação que pode
+                            ser do seu interesse. Confira nosso <a href="#"> Guia para montar uma pesquisa de opinião
+                                eficiente!
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <aside class="col-md blog-sidebar">
+
+                </aside>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+       <!-- Rodapés da página -->
+  <div id="footer">
+    <div class="footer1">
+      <div class="row">
+
+        <div class="col-md-6 text-justify">
+          <h3>Sobre Nós</h3>
+          <p>
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+        </div>
+
+        <div class="col-md-6 text-center">
+          <h3>Redes Sociais</h3>
+          <p>
+            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"
+                style="color: white; font-size: xx-large; margin-right: 20px;"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"
+                style="color: white; font-size: xx-large;"></i></a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer2">
+      Copyrigth &copy; 2020 . Questione Certo . Todos os Direitos Reservados
+    </div>
+  </div>
+  </div>
+  <!-- Fim Rodapés -->
+
+
+    <!-- Função para alterar icone do menu em telas pequenas -->
+
+    <script type="text/javascript" src="../js/CapturaLeads.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/CapturaLeads.js"></script>
+</body>
+
+</html>
