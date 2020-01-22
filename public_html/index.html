@@ -65,6 +65,7 @@
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       transition: 0.3s;
       width: 100%;
+      cursor: pointer;
     }
 
     .nextCard {
@@ -91,14 +92,19 @@
     }
 
     .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    .topnav a.active {
-      background-color: #4CAF50;
+      background-color: #14b614;
       color: white;
     }
+
+    .topnav .logo a:hover {
+      background-color: white;
+      color: white;
+    }
+
+    /* .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    } */
 
     .topnav .icon {
       display: none;
@@ -260,12 +266,12 @@
     </div>
     <!-- Fim Banner principal -->
 
-    <!-- Modal do botão "Saiba Mais" -->
+    <!-- Modal do botão "Saiba Mais" (Captura de Leads) -->
     <div id="myModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close text-right">&times;</span>
-        <form action="">
+        <form method="POST" action="js/scripts.js">
           <div class="form-group">
             <h3>Como vender mais com pesquisas (E-book)</h3>
 
@@ -273,15 +279,15 @@
             <div class="imageCapturaLeads"></div><br>
 
             <label>Seu nome completo:</label>
-            <input type="text" class="form-control" id="usuario" placeholder="Digite seu nome" required>
+            <input class="form-control" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" required>
             <br>
             <label>Seu e-mail:</label>
-            <input type="email" class="form-control" id="senha" placeholder="Digite seu e-mail" required>
+            <input class="form-control" name="email" type="email" required>
 
             <hr>
             <div class="text-right">
               <!-- <button type="button" class="btn btn-light" style="border-color: lightgray;">Cancelar</button> -->
-              <button type="submit" class="btn btn-success">Enviar para min</button>
+              <button class="btn btn-success" type="submit">Enviar para min</button>
             </div>
 
           </div>
@@ -318,7 +324,7 @@
       <div class="row" style="margin-top: 7%;">
         <!-- Cartões com Posts -->
         <div class="col-md-6 cardsPosts">
-          <div class="card">
+          <div class="card" onclick="window.location.href=''">
             <div class="row">
               <div class="col-sm-3">
                 <img src="imagens/trem.jpg" alt="Img1" style="width:100%;">
@@ -373,7 +379,9 @@
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
               sed do
               eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
+              tempor incididunt ut labore et dolore magna aliqua.
+              <a href="#">Veja Mais</a>
+            </p>
           </div>
           <hr>
           <div>
@@ -381,7 +389,9 @@
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
               sed do
               eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
+              tempor incididunt ut labore et dolore magna aliqua.
+              <a href="#">Veja Mais</a>
+            </p>
           </div>
           <hr>
           <div>
@@ -389,7 +399,9 @@
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
               sed do
               eiusmod
-              tempor incididunt ut labore et dolore magna aliqua..</p>
+              tempor incididunt ut labore et dolore magna aliqua.
+              <a href="#">Veja Mais</a>
+            </p>
           </div>
           <hr>
         </div>
@@ -398,8 +410,6 @@
     </div>
     <!-- Fim Conteúdo da Página -->
   </div>
-
-
 
   <!-- Rodapés da página -->
   <div class="footer1">
@@ -433,6 +443,7 @@
 
   <!-- Função para alterar icone do menu em telas pequenas -->
   <script>
+    // Mudar o menu quando estiver em dispositvos Mobile
     function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
@@ -442,30 +453,23 @@
       }
     }
 
-    // Get the modal
+    // Capturar o modal
     var modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
+    // Capturar o botão que abre o modal
     var btn = document.getElementById("myBtn");
 
-    // Get the <span> element that closes the modal
+    // Capturar o elemento para fechar o modal
     var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks the button, open the modal 
+    // Abrir/Mostrar o modal 
     btn.onclick = function () {
       modal.style.display = "block";
     }
 
-    // When the user clicks on <span> (x), close the modal
+    // Fechar o modal quando clicado no (V)
     span.onclick = function () {
       modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
     }
   </script>
 
