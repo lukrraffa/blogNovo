@@ -404,7 +404,10 @@ background: url(christopher-gower-m_HRfLhgABo-unsplash.jpg);
       text-decoration: none;
       cursor: pointer;
     }
-
+.blog-post{
+    background-color: #ddd;
+    color: black;
+}
     
   
 /* ------------------- Fim Nathan --------------- */
