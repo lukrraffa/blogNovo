@@ -1,11 +1,10 @@
-Lucas Rafael: Contribuiu com base e telas b�sicas, criou reposit�rio no git
-e ajudou em algumas telas utilizando bootstrap  
+Lucas Rafael: Criação páginas, repositório no git e auxilio na páginas.
 
-Nathan: Contribuiu com telas, otimizou tudo utilizando bootstrap e css
-puro, e js.
+Nathan: Criação de páginas, ajustes e otimização das já existentes e contruibuição nos processos.
 
-Wellington: Contribuiu com telas, imagens, auxiliou no git e 
-v�rios processos, e nas telas utilizou o bootstrap.
+Wellington: Contribuição com telas, imagens, auxílio no git e nos processos.
 
 OBS: Todos participaram e auxiliaram em basicamente todos os processos
 do desenvolvimento.
+
+Tecnologias utilizadas: HTML, CSS e JavaScript puro. Além do Framework Bootstrap 4
