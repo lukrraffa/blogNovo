@@ -2,218 +2,431 @@
 <html lang="pt-br">
 
 <head>
-    <title>Questione certo</title>
+    <title>Questione Certo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="imagens/logoIco.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
 
+        #page {
+            max-width: 1090px;
+        }
+
+        .mainMenu {
+            padding: 10px 65px;
+        }
+
+        .footer1 {
+            padding: 100px;
+            text-align: center;
+            background: #14b614;
+            color: white;
+        }
+
+        .footer2 {
+            padding: 15px;
+            text-align: center;
+            background: #2db92d;
+            color: white;
+            font-family: Helvetica, sans-serif, monospace;
+            font-size: 18px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #0275d8;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav .opcoesMenu a {
+            padding: 14px 50px;
+            margin-top: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #14b614;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .topnav .logo a:hover {
+            background-color: white;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        .topnav .search-container {
+            float: right;
+        }
+
+        .topnav input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: 2px solid #5cb85c;
+            border-radius: 15px;
+        }
+
+        .topnav .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 8px;
+            margin-right: 16px;
+            background: white;
+            color: #5cb85c;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .artigo {
+            padding: 20px 13%;
+            font-size: large;
+        }
+
+        .artigo h2 {
+            text-align: left;
+        }
+
+        /* .head{
+            padding: 20px 60px;
+            text-align: center;
+        } */
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .blog-post {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <!-- Menu -->
-            <div class="topnav" id="myTopnav">
-                <div class="row mainMenu">
-                    <div class="col-md-4">
-                        <div class="logo">
-                            <a href="index.html"><img src="imagens/logo.png" alt="Logo" width="210"></a>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4 ">
-                        <div class="opcoesMenu">
-                            <a href="#">Sobre Nós</a>
-                            <a href="#">E-books</a>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
+    <div id="page" class="container-fluid">
+        <!-- Menu -->
+        <div class="topnav" id="myTopnav">
+            <div class="mainMenu">
 
-                    <div class="col-md-4">
-                        <div class="search-container">
-                            <form action="">
-                                <input type="text" placeholder="Pesquisar" name="search">
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </div>
+                <!-- <div class="col-md-4"> -->
+                <div class="logo">
+                    <a href="index.html"><img src="imagens/logo.png" alt="Logo" width="210"></a>
                 </div>
-            </div>
-    </header>
+                <!-- </div> -->
 
-
-    <!-- Banner principal -->
-
-    <div class="mainMenu">
-        <div id="headerIndex" class="header ">
-            <div class="row">
-                <div class="col-md-8">
-                    <h1>
-                        <b>E-book: Venda mais
-                            <br>
-                            conhecendo seu cliente.</b></h1>
+                <!-- <div class="col-md-4"> -->
+                <div class="opcoesMenu">
+                    <a href="index.html">Sobre Nós</a>
+                    <a href="#">Materiais Gratuitos</a>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 </div>
+                <!-- </div> -->
 
-                <div class="col-md-4" style="margin-top: 3%;">
-                    <button id="myBtn" type="button" class="btn btn-light"
-                        style="float: left;;border-color: #5cb85c; color: #5cb85c;">Saiba Mais</button>
-                </div>
+                <!-- <div class="col-md-4"> -->
+                <!-- <div class="search-container"> -->
+                <!-- <form action="">
+              <input type="text" placeholder="Pesquisar" name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form> -->
+                <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <div class="col-md-1"> -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" style="font-size: xx-large;"></i>
+                </a>
+                <!-- </div> -->
+
             </div>
         </div>
+        <!-- Menu -->
+
+        <!-- Conteúdo -->
+        <div class="mainMenu">
+            <!-- Head do Artigo -->
+            <div class="head text-center">
+                <!-- <div class="row"> -->
+                <h1><b>6 Dicas para montar uma pesquisa <br> de opinião de sucesso</b></h1>
+                <!-- </div> -->
+
+                <!-- <div class="row"> -->
+                <p style="color: slategrey; font-size: x-large;">
+                    Seguindo estas 6 dicas você conseguirá montar uma <br>
+                    pesquisa de opinião muito mais eficiente para o <br>
+                    lançamento do seu produto ou serviço.
+                </p>
+                <!-- </div> -->
+
+                <div class="row">
+                    <img src="imagens/Rectangle_9.png" alt="Imagem Papel na mesa" width="100%" height="280px">
+                </div>
+            </div>
+            <!-- Fim Head do Artigo -->
+
+            <!-- Artigo -->
+            <div class="artigo text-justify">
+                <div class="row">
+                    <p>
+                        Antes de lançar um novo produto ou serviço no mercado, é fundamental saber
+                        o que os consumidores estão buscando. A melhor forma de fazer isso é
+                        perguntando diretamente a eles. Mas como montar uma pesquisa de opinião
+                        que gere o retorno que você precisa? É o que vamos explicar, neste artigo!
+                        Veja quais são os cuidados que devem ser tomados na hora de elaborar a sua
+                        pesquisa para que ela fique mais atrativa para os respondentes e forneça
+                        todas as informações que o seu negócio precisa para fazer um lançamento de
+                        sucesso.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <p>
+                        <h2><b>1. Capriche na introdução da sua pesquisa de opinião</b></h2>
+                        <p>
+                            A introdução é o primeiro contato que o respondente terá com a sua pesquisa
+                            de opinião e, como diz o ditado, “a primeira impressão é a que fica”. Por isso, é
+                            essencial que ela seja clara em mostrar seu objetivo e seja persuasiva o
+                            suficiente para que o leitor se interesse em respondê-la.
+                        </p>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <p>
+                        <h2><b>2. Fique atento às opções de resposta em questões fechadas
+                                de opinião</b></h2>
+                        <p>
+                            Tome bastante cuidado ao elaborar as questões fechadas para que as
+                            alternativas de respostas não se repitam e gerem informações de valor.
+                            Opções como “todas ou nenhumas das alternativas anteriores” devem ser
+                            evitadas para que o resultado da pesquisa seja mais preciso e específico.
+                        </p>
+
+                        <img src="imagens/test.jpg" alt="Imagem Multipas Escolhas" width="100%" height="300">
+                        <span style="float: right; color: slategrey; font-size: small; font-style: italic;">Imagem:
+                            Robert
+                            Barbwick/Unsplash</span>
+                    </p>
+                </div>
+
+                <div class="row" style="margin-top: 50px;">
+                    <p>
+                        <h2><b>3. Limite a quantidade de perguntas por página</b></h2>
+                        <p>
+                            As pessoas tendem a desanimar ao perceber que a tarefa a ser executada é
+                            mais demorada ou extensa. Por esse motivo, o ideal distribuir as questões de
+                            forma a suavizar essa impressão. Assim, será mais difícil que o respondente
+                            desista antes de chegar ao final.
+                        </p>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <p>
+                        <h2><b>4. Evite criar pesquisas muito longas</b></h2>
+                        <p>
+                            Outro ponto muito importante em relação ao tamanho da pesquisa está
+                            relacionada ao tempo gasto para respondê-las. As pessoas não dispõem de
+                            muitas horas vagas ao longo do dia, então a sua pesquisa não pode ser muito
+                            longa. Uma boa dica é fazer testes cronometrados para refinar as questões e
+                            evitar que elas se tornem desinteressantes.
+                        </p>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <p>
+                        <h2><b>5. Utilize uma linguagem adequada</b></h2>
+                        <p>
+                            Se coloque no lugar do entrevistado. A utilização de um vocabulário simples e
+                            sem jargões é muito mais proveitosa, uma vez que, uma linguagem muito
+                            técnica ou rebuscada pode confundir o público e afetar seus resultados. Cuide
+                            para não utilizar linguagem indutiva, pois ela gera resultados previsíveis e de
+                            pouca utilidade para sua análise.
+                        </p>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <p>
+                        <h2><b>6. Revise a pesquisa de opinião antes de enviá-la</b></h2>
+                        <p>
+                            Antes de fazer o envio, certifique-se de que a pesquisa foi devidamente
+                            revisada sob dois aspectos principais. O primeiro é relativo ao conteúdo, veja
+                            se todas as questões estão claras e objetivas, se as alternativas geram valor
+                            para a sua análise e se a quantidade de perguntas está adequada.
+                        </p>
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="row" style="margin-top: 50px;">
+                    <p>
+                        Seguindo estas 6 dicas você conseguirá montar uma pesquisa de opinião
+                        muito mais eficiente para o lançamento do seu produto ou serviço. Então, não
+                        deixe de se atentar a cada uma delas para obter as informações certas para o
+                        seu negócio!
+                    </p>
+
+                    <p>
+                        Se você gostou do conteúdo e quer se aprofundar nesse assunto, temos uma
+                        indicação que pode ser do seu interesse. Confira nosso <b>Guia para montar uma
+                            pesquisa de opinião eficiente!</b> Basta clicar no botão abaixo para baixar de
+                        graça!
+                    </p>
+                </div>
+
+                <div class="row">
+                    <button type="button" class="myBtn btn btn-success "
+                        style="float: left;;border: 4px double white; color: white; border-radius: 20px; box-shadow: 5px 5px 5px 0px rgba(11, 167, 5, 0.527);">Saiba
+                        Mais</button>
+                </div>
+
+            </div>
+            <!-- Fim Artigo -->
+        </div>
+        <!-- Fim Conteúdo -->
+
     </div>
-    <!-- Modal do botão "Saiba Mais" -->
+
+    <!-- Modal do botão "Saiba Mais" (Captura de Leads) -->
     <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close text-right">&times;</span>
-            <form action="">
+            <form method="POST" action="https://smtl.gama.academy/leads/f5d1c3f0-39f4-11ea-96ea-713ae26a8736">
                 <div class="form-group">
-                    <h3>Como vender mais com pesquisas (E-book)</h3>
+                    <h4>Como vender mais com pesquisas (E-book)</h4>
 
                     <br>
-                    <div class="imageCapturaLeads"></div><br>
+                    <div class="imageCapturaLeads"></div>
+                    <br>
 
                     <label>Seu nome completo:</label>
-                    <input type="text" class="form-control" id="usuario" placeholder="Digite seu nome" required>
+                    <input id="nome" class="form-control" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$"
+                        title="Digite seu nome completo" required />
                     <br>
                     <label>Seu e-mail:</label>
-                    <input type="email" class="form-control" id="senha" placeholder="Digite seu e-mail" required>
+                    <input id="email" class="form-control" name="email" type="email" title="Digite um email válido"
+                        required />
 
                     <hr>
-                    <div class="text-right">
-                        <!-- <button type="button" class="btn btn-light" style="border-color: lightgray;">Cancelar</button> -->
-                        <button type="submit" class="btn btn-success">Enviar para min</button>
-                    </div>
+
+
+
+                    <input name="redirectTo" type="hidden" value="http://questionecerto.com.br/PostPermalink.html" />
+                    <!-- <input id="a" name="debugMode" type="hidden" value="false" /> -->
+
+                    <input id="b" class="btn btn-success" type="submit" />
+
 
                 </div>
             </form>
         </div>
     </div>
 
-    <div class="container-fluid">
-        
-        <main role="row" class="container">
-            <div class="row">
-                <div class="col-md-8 blog-main">
-                    <h3 class="pb-3 mb-4 font-italic border-bottom">
-                        Postagem
-                    </h3>
-                    <div class="blog-post">
-                        <h2 class="blog-post-title">Conhecendo o Mercado</h2>
-                        <p class="blog-post-meta">"Escrito por'
-                            <a href="#">Marshmallow-14</a>", em 22 de Janeiro de 2020"
-                        </p>
-                        <p>Este conteudo fornece questionamentos a quem esta pensando em empreender no atual mercado
-                        </p>
-                        <p>Antes de lançar um novo produto ou serviço no mercado, é fundamental saber o que os
-                            consumidores estão buscando. A melhor forma de fazer isso é perguntando diretamente a
-                            eles. Mas como montar uma pesquisa de opinião que gere o retorno que você precisa? É o
-                            que vamos explicar, neste artigo!
-                            Veja quais são os cuidados que devem ser tomados na hora de elaborar a sua pesquisa para
-                            que ela fique mais atrativa para os respondentes e forneça todas as informações que o
-                            seu negócio precisa para fazer um lançamento de sucesso.
-                        </p>
-                        <h3>1. Capriche na introdução da sua pesquisa de opinião </h3>
-
-                        <p>
-                            A introdução é o primeiro contato que o respondente terá com a sua pesquisa de opinião e,
-                            como diz o ditado, “a primeira impressão é a que fica”. Por isso, é essencial que ela seja
-                            clara em mostrar seu objetivo e seja persuasiva o suficiente para que o leitor se interesse
-                            em respondê-la.
-
-                        </p>
-                        <h3>
-                            2. Fique atento às opções de resposta em questões fechadas
-                        </h3>
-                        <p>
-                            Tome bastante cuidado ao elaborar as questões fechadas para que as alternativas de respostas
-                            não se repitam e gerem informações de valor. Opções como “todas ou nenhumas das alternativas
-                            anteriores” devem ser evitadas para que o resultado da pesquisa seja mais preciso e
-                            específico.
-                        </p>
-                        <h3>3. Limite a quantidade de perguntas por página
-                        </h3>
-                        <p>
-                            Tenha cuidado com a quantidade de perguntas dispostas em cada página. As pessoas tendem a
-                            desanimar ao perceber que a tarefa a ser executada é mais demorada ou extensa. Por esse
-                            motivo, o ideal distribuir as questões de forma a suavizar essa impressão. Assim, será mais
-                            difícil que o respondente desista antes de chegar ao final.
-
-                        </p>
-                        <h3>
-                            4. Evite criar pesquisas muito longas
-
-                        </h3>
-                        <p>
-                            Outro ponto muito importante em relação ao tamanho da pesquisa está relacionada ao tempo
-                            gasto para respondê-las. As pessoas não dispõem de muitas horas vagas ao longo do dia, então
-                            a sua pesquisa não pode ser muito longa. Uma boa dica é fazer testes cronometrados para
-                            refinar as questões e evitar que elas se tornem desinteressantes.
-
-
-                        </p>
-                        <h3>
-                            5. Utilize uma linguagem adequada
-
-                        </h3>
-                        <p>
-                            Se coloque no lugar do entrevistado. A utilização de um vocabulário simples e sem jargões é
-                            muito mais proveitosa, uma vez que, uma linguagem muito técnica ou rebuscada pode confundir
-                            o público e afetar seus resultados. Cuide para não utilizar linguagem indutiva, pois ela
-                            gera resultados previsíveis e de pouca utilidade para sua análise.
-
-                        </p>
-                        <h3>
-
-                            6. Revise a pesquisa de opinião antes de enviá-la
-
-                        </h3>
-                        <p>
-                            Antes de fazer o envio, certifique-se de que a pesquisa foi devidamente revisada sob dois
-                            aspectos principais. O primeiro é relativo ao conteúdo, veja se todas as questões estão
-                            claras e objetivas, se as alternativas geram valor para a sua análise e se a quantidade de
-                            perguntas está adequada.
-                            O segundo é sobre a parte gramatical e ortográfica. Erros dessa natureza acabam afetando a
-                            credibilidade da empresa e a adesão de respondentes. Para ambos os pontos, é fundamental
-                            contar com a ajuda de alguém que ainda não tenha visto o questionário e possa trazer uma
-                            visão diferenciada sobre ele.
-                            Seguindo estas 6 dicas você conseguirá montar uma pesquisa de opinião muito mais eficiente
-                            para o lançamento do seu produto ou serviço. Então, não deixe de se atentar a cada uma delas
-                            para obter as informações certas para o seu negócio!
-                            Se você gostou do conteúdo e quer se aprofundar nesse assunto, temos uma indicação que pode
-                            ser do seu interesse. Confira nosso <a href="#"> Guia para montar uma pesquisa de opinião
-                                eficiente!
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <aside class="col-md blog-sidebar">
-
-                </aside>
-            </div>
-        </main>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- Rodapés da página -->
-    <footer id="nav-footer" class="nav-footer">
+    <div id="footer">
         <div class="footer1">
             <div class="row">
 
@@ -241,14 +454,59 @@
         <div class="footer2">
             Copyrigth &copy; 2020 . Questione Certo . Todos os Direitos Reservados
         </div>
-    </footer>
+    </div>
+    <!-- Fim Rodapés -->
 
-    <!-- Função para alterar icone do menu em telas pequenas -->
+    <script>
+        // Mudar o menu quando estiver em dispositvos Mobile
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
 
-    <script type="text/javascript" src="js/CapturaLeads.js"></script>
+        // Capturar o modal
+        var modal = document.getElementById("myModal");
+
+        // Capturar o botão que abre o modal
+        var btn1 = document.getElementsByClassName("myBtn")[0];
+        // var btn2 = document.getElementsByClassName("myBtn")[1];
+
+        // Capturar o elemento para fechar o modal
+        var span1 = document.getElementsByClassName("close")[0];
+        // var span2 = document.getElementsByClassName("close")[1];
+
+        // Abrir/Mostrar o modal
+        btn1.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // btn2.onclick = function () {
+        //     modal.style.display = "block";
+        // }
+
+        // Fechar o modal quando clicado no (V)
+        span1.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // span2.onclick = function () {
+        //     modal.style.display = "none";
+        // }
+
+        // $.ajax({
+        // type: "POST",
+        // url: "https://smtl.gama.academy/leads/f5d1c3f0-39f4-11ea-96ea-713ae26a8736",
+        // data: data,
+        // });
+
+    </script>
+
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/CapturaLeads.js"></script>
 </body>
 
 </html>
