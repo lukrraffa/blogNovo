@@ -188,8 +188,8 @@
         /* Deixar verde */
         background: url(../imagens/Banner\ Quiz.jpg) no-repeat;
         background-position: center;
-        filter:hue-rotate(66deg) opacity(70%) drop-shadow(0 0 0rem green);
-        width: auto;
+        /* filter:hue-rotate(66deg) opacity(70%) drop-shadow(0 0 0rem green); */
+        width: 100%;
         height: 200px;
     }
     
@@ -197,8 +197,8 @@
       /* Deixar verde */
       background: url(../imagens/undraw.png) no-repeat;
       background-position: center;
-      filter:hue-rotate(66deg) opacity(70%) drop-shadow(0 0 0rem green);
-      width: auto;
+      /* filter:hue-rotate(66deg) opacity(70%) drop-shadow(0 0 0rem green); */
+      width: 100%;
       height: 200px;
     }
     

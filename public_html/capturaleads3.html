@@ -17,47 +17,48 @@
     body {
       overflow: hidden;
       background-color: black;
-      
+
     }
-    
-    
   </style>
 
 </head>
 
 <body>
 
-  <div id="fundoLogin"><img src="imagens/Escrevendo 2.jpg" alt="" width="100%" height="auto"></div>
+  <div id="fundoLogin"><img src="imagens/Escrevendo 2.jpg" alt="Quiz" style="width: 100%;"></div>
 
 
-
-     <div class="modal-content">
-        <span class="close text-right">&times;</span>
-        <form method="POST" action="https://smtl.gama.academy/leads/f5d1c3f0-39f4-11ea-96ea-713ae26a8736">
-          <div class="form-group">
-            <h4>Questionario de Avaliação</h4>
-
-            <br>
-            <div class="imageCapturaLeads"></div>
-            <br>
-
-            <label>Seu nome completo:</label>
-            <input id="nome" class="form-control" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$"
-              title="Digite seu nome completo" required />
-            <br>
-            <label>Seu e-mail:</label>
-            <input id="email" class="form-control" name="email" type="email" title="Digite um email válido" required />
-
-            <hr>
-            <input name="redirectTo" type="hidden" value="https://questionecerto.typeform.com//to/utyVVp" />
-            <!-- <input id="a" name="debugMode" type="hidden" value="true" /> -->
-
-            <input id="b" class="btn btn-success" type="submit" />
+  <div class="modal-dialog modal-dialog-centered">
 
 
-          </div>
-        </form>
-      </div>
+    <div class="modal-content" style="width: 100%;">
+      <!-- <span class="close text-right">&times;</span> -->
+      <form method="POST" action="https://smtl.gama.academy/leads/f5d1c3f0-39f4-11ea-96ea-713ae26a8736">
+        <div class="form-group">
+          <h4>Acesse agora o Quiz!</h4>
+
+          <br>
+          <div class="imageCapturaLeads"></div>
+          <br>
+
+          <label>Seu nome completo:</label>
+          <input id="nome" class="form-control" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$"
+            title="Digite seu nome completo" required />
+          <br>
+          <label>Seu e-mail:</label>
+          <input id="email" class="form-control" name="email" type="email" title="Digite um email válido" required />
+
+          <hr>
+          <input name="redirectTo" type="hidden" value="https://questionecerto.typeform.com//to/utyVVp" />
+          <!-- <input id="a" name="debugMode" type="hidden" value="true" /> -->
+
+          <input id="b" class="btn btn-success" type="submit" />
+
+
+        </div>
+      </form>
+    </div>
+  </div>
   </div>
   <script>
     // Mudar o menu quando estiver em dispositvos Mobile
