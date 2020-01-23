@@ -1,0 +1,429 @@
+.topo{   
+
+    /*Espaçamento dos elementos*/
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: baseline;
+    
+    }
+    
+    nav img.tamanho{
+    position: absolute;
+    width: 307px;
+    height: 63.02px;
+    left: 160px;
+    top: 78.78px;
+    }
+    
+    /* -------------------------- */
+    
+    .containerEbook {
+                width: 100vw;
+                height: 100vh;
+                background: #6C7A89;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center
+             }
+         .box {
+                width: 300px;
+                height: 300px;
+                background: #fff;
+            }
+             body {
+                margin: 0px;
+             }
+        
+    
+    /* -------------------------- */
+    
+    /* Estilo do rodapé sobre nós */
+    
+    .container2 {
+        display: flex;    
+        flex-direction: row;
+        justify-content: space-around;   
+        align-items: baseline;
+        height: 300px; 
+        position: absolute;
+        width: 1440px;
+        height: 579px;
+       left: 0px;
+       top: 1693px;
+    
+    /* SADASDAD */
+    background: #14B614;
+    
+    }
+    
+    .container2 > div {
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+    
+    
+    /* -------------------------- */
+    
+    /* Estilo do rodapé */
+    
+    footer .container {
+            position: absolute;
+            width: 1440px;
+            height: 101px;
+            left: 0px;
+            top: 2171px;
+            background: rgba(92, 184, 92, 0.5);
+    
+    }
+    
+    .container > div{
+    position: absolute;
+    width: 851px;
+    height: 74px;
+    left: 295px;
+    top: 2211px;
+    
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 153% */
+    
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 5px;
+    
+    color: #FFFFFF;
+    background: rgba(92, 184, 92, 0.5);
+    }
+    
+    
+    
+    /* ---------------------------- */
+    /* Página de vendas, marketing, etc */
+    
+    h1 .titulo{
+    position: absolute;
+    width: 738px;
+    height: 139px;
+    left: 351px;
+    top: 191px;
+    
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 78px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+    
+    }
+    
+    p .titulo2{
+        position: absolute;
+    width: 715px;
+    height: 69px;
+    left: 363px;
+    top: 362px;
+    
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #777777;
+    }
+    
+    .corpo{
+        position: absolute;
+    width: 738px;
+    height: 1562px;
+    left: 351px;
+    top: 1021px;
+    
+    font-family: HelveticaNeue;
+    font-size: 21px;
+    line-height: 25px;
+    
+    color: #000000;
+    }
+    
+    img .modelo{
+        position: absolute;
+    width: 1120px;
+    height: 342px;
+    left: 160px;
+    top: 639px;
+    
+    background: linear-gradient(0deg, rgba(20, 182, 20, 0.42), rgba(20, 182, 20, 0.42)), url();
+    }
+    
+    img .modelo2{
+        position: absolute;
+    width: 742px;
+    height: 257px;
+    left: 349px;
+    top: 1708px;
+    
+    background: url(christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    }
+    
+    /* --------------------- Nathan ---------------- */
+    
+    /* Formatação da imagem de na tela de Captura de Leads 2 */
+    .imageCapturaLeads{
+        /* Deixar verde */
+        background: url(../imagens/Banner\ Kit.jpg) no-repeat;
+        background-position: center;
+        filter:hue-rotate(66deg) opacity(70%) drop-shadow(0 0 0rem green);
+        width: auto;
+        height: 200px;
+    }
+    
+    .imageCapturaLeads2{
+      /* Deixar verde */
+      background: url(../imagens/undraw.png) no-repeat;
+      background-position: center;
+      filter:hue-rotate(66deg) opacity(70%) drop-shadow(0 0 0rem green);
+      width: auto;
+      height: 200px;
+    }
+    
+    /* Formatação da imagem de fundo de Login */
+    #fundoLogin{
+        /* Deixar verde */
+        filter: hue-rotate(66deg) opacity(70%) drop-shadow(0 0 0rem green);
+        position: absolute;
+        margin-top: -27px;
+        overflow-y: none;
+    }
+    
+    #headerIndex{
+        background: url(../imagens/Rectangle.png) no-repeat;
+        background-position: center;
+        /* filter:hue-rotate(66deg) opacity(70%) drop-shadow(0 0 0rem green); */
+        width: 100%;
+        height: auto;
+    }
+    
+    #CapturaLeadAzul{
+        background-image: url(../imagens/RectangleBlue.png);
+        background-position: center;
+        width: auto;
+        height: 250px;
+        padding: 30px 65px;
+        color: white;
+        width: 127%;
+        height: auto;
+        margin-left: -14%;
+    }
+    
+    .inputBlue input{
+        border-radius: 20px;
+    }
+    
+    #b{
+        width: 100%;
+    }
+    
+    /* ======== */
+    * {
+        box-sizing: border-box;
+      }
+    
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+      }
+    
+      #page {
+        max-width: 1090px;
+      }
+    
+      .header {
+        margin-top: 20px;
+        padding: 45px;
+        color: white;
+      }
+    
+      .mainMenu {
+        padding: 10px 65px;
+      }
+    
+      .leadsFooter {
+        padding: 0px 65px;
+        margin-bottom: 35px;
+      }
+    
+      .mainContent {
+        -ms-flex: 70%;
+        flex: 70%;
+        background-color: white;
+        padding: 65px;
+      }
+    
+      .footer1 {
+        padding: 100px;
+        text-align: center;
+        background: #27ae60;
+        color: white;
+      }
+    
+      .footer2 {
+        padding: 15px;
+        text-align: center;
+        background: #187c42;
+        color: white;
+        font-family: Helvetica, sans-serif, monospace;
+        font-size: 18px;
+      }
+    
+      .postsPopulares {
+        padding: 0 8%;
+      }
+    
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 100%;
+        cursor: pointer;
+      }
+    
+      .nextCard {
+        margin-top: 15px;
+      }
+    
+      .card:hover {
+        box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+      }
+    
+      .topnav {
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+      }
+    
+      .topnav a {
+        float: left;
+        display: block;
+        color: #0275d8;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+    
+      .topnav .opcoesMenu a {
+        padding: 14px 50px;
+        margin-top: 17px;
+      }
+    
+      .topnav a:hover {
+        background-color: #14b614;
+        color: white;
+        border-radius: 4px;
+      }
+    
+      .topnav .logo a:hover {
+        background-color: white;
+        color: white;
+      }
+    
+      .topnav .icon {
+        display: none;
+      }
+    
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+      }
+    
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+    
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    
+      .blog-post {
+        background-color: #ddd;
+        color: black;
+      }
+    
+      .icon-bar {
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    
+      .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+      }
+    
+      .icon-bar a:hover {
+        background-color: #14b614;
+      }
+    
+      .facebook {
+        background: #3B5998;
+        color: white;
+      }
+    
+      .instagram {
+        background: #f03c3c;
+        color: white;
+      }
+    
+      .linkedin {
+        background: #007bb5;
+        color: white;
+      }
+    /* ======== */
+      
+    /* ------------------- Fim Nathan --------------- */
+    
+    
