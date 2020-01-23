@@ -193,6 +193,15 @@ background: url(christopher-gower-m_HRfLhgABo-unsplash.jpg);
     height: 200px;
 }
 
+.imageCapturaLeads2{
+  /* Deixar verde */
+  background: url(../imagens/undraw.png) no-repeat;
+  background-position: center;
+  filter:hue-rotate(66deg) opacity(70%) drop-shadow(0 0 0rem green);
+  width: auto;
+  height: 200px;
+}
+
 /* Formatação da imagem de fundo de Login */
 #fundoLogin{
     /* Deixar verde */

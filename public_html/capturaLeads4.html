@@ -1,0 +1,71 @@
+<!-- Autor(es): Lucas, Nathan -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Resolução de pesquisas através de pesquisas de opinião" />
+  <meta name="keywords" content="pesquisa, opiniao, mercado digital">
+  <meta name="author" content="Marshmallow -14">
+
+  <title>Questione certo - Login</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+
+  <style>
+    body {
+      overflow: hidden;
+      background-color: black;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="fundoLogin"><img src="imagens/fundo1.jpg" alt="" width="100%" height="auto"></div>
+
+  <div class="modal-content">
+    <span class="close text-right">&times;</span>
+
+    <form method="POST" action="https://smtl.gama.academy/leads/f5d1c3f0-39f4-11ea-96ea-713ae26a8736">
+      <h4>Envie o material!</h4>
+      <br>
+      <div class="imageCapturaLeads2"></div>
+      <br>
+      <label>Seu nome completo:</label>
+      
+      <input name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" required />
+      <br>
+      <label>Seu e-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;
+      </label>
+      <input name="email" type="email" title="Digite um email válido" required />
+
+      <hr>
+      <input name="redirectTo" type="hidden" value="http://questionecerto.com.br" />
+      <!-- <input name="debugMode" type="hidden" value="true" /> -->
+      <input id="b" class="btn btn-success" type="submit" />
+    </form>
+
+
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="mainMenu pt-5">
+    <!-- Head do Artigo -->
+    <div class="head text-center">
+
+      <div class="row">
+        <img src="imagens/logo.png" alt="Imagem Papel na mesa" width="50%" height="180px">
+      </div>
+    </div>
+    <!-- Fim Head do Artigo -->
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>
