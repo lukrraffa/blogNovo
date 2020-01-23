@@ -276,7 +276,7 @@ background: url(christopher-gower-m_HRfLhgABo-unsplash.jpg);
   }
 
   .footer1 {
-    padding: 100px;
+    padding: 50px 100px;
     text-align: center;
     background: #27ae60;
     color: white;
@@ -382,10 +382,34 @@ background: url(christopher-gower-m_HRfLhgABo-unsplash.jpg);
     cursor: pointer;
   }
 
-  .blog-post {
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+#page {
+    max-width: 1090px;
+}
+
+.mainMenu {
+    padding: 10px 65px;
+}
+
+.artigo {
+    padding: 20px 13%;
+    font-size: large;
+}
+
+.artigo h2 {
+    text-align: left;
+}
+
+.blog-post {
     background-color: #ddd;
     color: black;
-  }
+}
+
+
 
   .icon-bar {
     position: fixed;
