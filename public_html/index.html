@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="imagens/logoIco.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
@@ -50,14 +51,14 @@
     .footer1 {
       padding: 100px;
       text-align: center;
-      background: #14b614;
+      background: #27ae60;
       color: white;
     }
 
     .footer2 {
       padding: 15px;
       text-align: center;
-      background: #2db92d;
+      background: #187c42;
       color: white;
       font-family: Helvetica, sans-serif, monospace;
       font-size: 18px;
@@ -118,31 +119,20 @@
       display: none;
     }
 
-    /* The Modal (background) */
     .modal {
       display: none;
-      /* Hidden by default */
       position: fixed;
-      /* Stay in place */
       z-index: 1;
-      /* Sit on top */
       padding-top: 100px;
-      /* Location of the box */
       left: 0;
       top: 0;
       width: 100%;
-      /* Full width */
       height: 100%;
-      /* Full height */
       overflow: auto;
-      /* Enable scroll if needed */
       background-color: rgb(0, 0, 0);
-      /* Fallback color */
       background-color: rgba(0, 0, 0, 0.4);
-      /* Black w/ opacity */
     }
 
-    /* Modal Content */
     .modal-content {
       background-color: #fefefe;
       margin: auto;
@@ -151,7 +141,6 @@
       width: 50%;
     }
 
-    /* The Close Button */
     .close {
       color: #aaaaaa;
       float: right;
@@ -211,46 +200,32 @@
 
 <body>
 
-  <div class="icon-bar">
+  <!-- Barra de redes sociais na lateral da página -->
+  <!-- <div class="icon-bar">
     <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
     <a href="https://www.instagram.com/questionecerto/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
     <a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  </div>
+  </div> -->
 
   <div id="page" class="container-fluid">
     <!-- Menu -->
     <div class="topnav" id="myTopnav">
       <div class="mainMenu">
 
-        <!-- <div class="col-md-4"> -->
         <div class="logo">
           <a href="#"><img src="imagens/logo.png" alt="Logo" width="210"></a>
         </div>
-        <!-- </div> -->
 
-        <!-- <div class="col-md-4"> -->
         <div class="opcoesMenu">
           <a href="#">Sobre Nós</a>
           <a href="PostPermalink.html">Materiais Gratuitos</a>
-          <!-- <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> -->
+          <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
-        <!-- </div> -->
 
-        <!-- <div class="col-md-4"> -->
-        <!-- <div class="search-container"> -->
-        <!-- <form action="">
-              <input type="text" placeholder="Pesquisar" name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form> -->
-        <!-- </div> -->
-        <!-- </div> -->
-
-        <!-- <div class="col-md-1"> -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars" style="font-size: xx-large;"></i>
         </a>
-        <!-- </div> -->
 
       </div>
     </div>
@@ -260,11 +235,12 @@
     <div class="mainMenu">
       <div id="headerIndex" class="header ">
         <div class="row">
+
           <div class="col-md-8">
             <h1><b>E-book: Venda mais<br>conhecendo seu cliente.</b></h1>
           </div>
 
-          <div class="col-md-4" style="margin-top: 3%;">
+          <div class="col-md-3 pt-4">
             <button type="button" class="myBtn btn btn-light"
               style="float: left;;border-color: #5cb85c; color: #5cb85c;">Saiba Mais</button>
           </div>
@@ -280,7 +256,7 @@
         <span class="close text-right">&times;</span>
         <form method="POST" action="https://smtl.gama.academy/leads/f5d1c3f0-39f4-11ea-96ea-713ae26a8736">
           <div class="form-group">
-            <h4>Como vender mais com pesquisas (E-book)</h4>
+            <h4>Venda mais conhecendo seu cliente (E-book)</h4>
 
             <br>
             <div class="imageCapturaLeads"></div>
@@ -297,8 +273,8 @@
 
 
 
-            <!--input name="redirectTo" type="hidden" value="http://questionecerto.com.br" /> -->
-            <input id="a" name="debugMode" type="hidden" value="true" />
+            <input name="redirectTo" type="hidden" value="http://questionecerto.com.br" />
+            <!-- <input id="a" name="debugMode" type="hidden" value="true" /> -->
 
             <input id="b" class="btn btn-success" type="submit" />
 
@@ -308,60 +284,141 @@
       </div>
     </div>
 
-    <!-- Conteúdo da Página -->
+    <!-- Conteúdo da Página geral -->
     <div class="mainContent">
       <div class="row">
         <!-- Conteúdo do primeiro post -->
-        <div class="col-md-6 post1">
-          <h2><b>Questione certo!</b></h2>
-          <h5 style="color: slategrey; font-size: x-large;">Soluções de pesquisa online</h5>
+        <div class="col-md-12 post1">
 
-          <p class="text-justify">Antes de lançar um novo produto ou serviço no mercado, é fundamental saber o que os
-            consumidores estão buscando. A melhor forma de fazer isso é perguntando diretamente a eles. Mas como montar
-            uma pesquisa de opinião que gere o retorno que você precisa? É o que vamos explicar, neste artigo! Veja
-            quais são os cuidados que devem ser tomados na hora de elaborar a sua pesquisa para que ela fique mais
-            atrativa para os respondentes e forneça todas as informações que o seu negócio precisa para fazer um
-            lançamento de sucesso.</p>
-        </div>
+          <!-- Título dos cartões com posts -->
+          <h3
+            style="letter-spacing: 3px; font-size: large; color: #b1b1b1; font-family: 'Montserrat-Black', sans-serif; margin-top: -27px;">
+            <b>Destaque</b>
+          </h3>
+          <!-- Fim Título dos cartões com posts -->
 
-        <!-- Imagem ao lado do primeiro post -->
-        <div class="col-md-5 imagemPost1">
-          <img src="imagens/mesa_de_reuniao_notebook.jpg" alt="ImagemPost1" width="121%" height="300px">
+          <div class="card">
+            <div class="row">
+
+              <!-- Texto do primeiro post -->
+              <div class="col-md-6" style="padding: 12px 30px;">
+                <h2><b>Questione certo!</b></h2>
+                <h5 style="color: slategrey; font-size: x-large;">Soluções de pesquisa online</h5>
+
+                <p class="text-justify">Antes de lançar um novo produto ou serviço no mercado, é fundamental saber o que
+                  os
+                  consumidores estão buscando. A melhor forma de fazer isso é perguntando diretamente a eles. Mas como
+                  montar
+                  uma pesquisa de opinião que gere o retorno que você precisa? É o que vamos explicar, neste artigo!
+                  Veja
+                  quais são os cuidados que devem ser tomados na hora de elaborar a sua pesquisa para que ela fique mais
+                  atrativa para os respondentes e forneça todas as informações que o seu negócio precisa para fazer um
+                  lançamento de sucesso.</p>
+
+                  <a href="" class=" btn btn-success"
+                  style="border: 4px double white; color: white; border-radius: 20px; box-shadow: 5px 5px 5px 0px rgba(11, 167, 5, 0.527); margin-left: 37%;">
+                  Ler Artigo
+                  </a>
+
+              </div>
+              <!-- Fim Texto do primeiro post -->
+
+              <!-- Imagem ao lado do primeiro post -->
+              <div class="col-md-6">
+                <img src="imagens/mesa_de_reuniao_notebook.jpg" alt="ImagemPost1" width="100%" height="100%">
+              </div>
+              <!-- Fim Imagem ao lado do primeiro post -->
+
+            </div>
+          </div>
         </div>
       </div>
       <!-- Fim Conteúdo do primeiro post -->
 
       <br><br>
 
+      <!-- Banner azul de captura -->
+      <div id="CapturaLeadAzul" class="row">
+
+        <div class="col-md-4">
+          <img src="imagens/undraw.png" alt="Graph" width="80%" height="auto">
+        </div>
+
+        <div class="col-md-4">
+          <h2 style="font-size: 41px">Guia para <b>vender <br> mais</b> com ajuda de pesquisas eficientes.</h2>
+        </div>
+
+        <!-- Formulário -->
+        <div class="col-md-4 inputBlue">
+          <form method="POST" action="https://smtl.gama.academy/leads/f5d1c3f0-39f4-11ea-96ea-713ae26a8736">
+            <input id="nome" class="form-control" name="name" type="text" placeholder="Seu nome completo"
+              pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" required />
+            <br>
+            <input id="email" class="form-control" name="email" type="email" placeholder="Seu melhor email"
+              title="Digite um email válido" required />
+            <br>
+            <input name="redirectTo" type="hidden" value="http://questionecerto.com.br" />
+            <input id="b" class="btn btn-success" type="submit" value="Baixar de graça" />
+          </form>
+        </div>
+        <!-- Fim Formulário -->
+      </div>
+
+      <br><br>
+
       <div class="row">
         <!-- Cartões com Posts -->
         <div class="col-md-6 cardsPosts">
+
+          <!-- Título dos cartões com posts -->
+          <h3
+            style="letter-spacing: 3px; font-size: large; color:#b1b1b1; font-family: 'Montserrat-Black', sans-serif;">
+            <b>Nosso Conteúdo</b></h3>
+          <!-- Fim Título dos cartões com posts -->
+
+          <!-- Cartões -->
           <div class="card" onclick="window.location.href=''">
             <div class="row">
+
               <div class="col-sm-4">
                 <img src="imagens/trem.jpg" alt="Img1" style="width:100%;">
               </div>
+
               <div class="col-sm-8" style="padding: 9px; padding-right: 15px;">
                 <h5>Conhecendo o mercado</h5>
                 <h6 style="color: slategrey; font-size: medium;">Questione certo</h6>
-                <p>Este conteudo fornece questionamentos a quem esta pensando em empreender no atual mercado.</p>
-                </p>
+                <p>Questionamentos a quem esta pensando em empreender no atual mercado.</p>
+
+                <a href="" class=" btn btn-success btn-sm"
+                style="color: white; border-radius: 20px; margin-left: 30%;">
+                Ler Artigo
+                </a>
+
               </div>
+
             </div>
           </div>
 
           <div class="card nextCard">
             <div class="row">
+
               <div class="col-sm-4">
                 <img src="imagens/lente_camera.jpg" alt="Img2" style="width:100%;">
               </div>
+
               <div class="col-sm-8" style="padding: 5px; padding-right: 25px;">
+
                 <h5>Pesquisa</h5>
                 <h6 style="color: slategrey; font-size: medium;">Questione certo</h6
                   style="color: slategrey; font-size: medium;">
+
                 <p>Sabemos a importância de ouvir para entender suas necessidades e buscar
                   soluções mais precisas e eficientes.</p>
-                </p>
+
+                  <a href="" class=" btn btn-success btn-sm"
+                  style="color: white; border-radius: 20px; margin-left: 30%;">
+                  Ler Artigo
+                  </a>
 
               </div>
             </div>
@@ -369,24 +426,34 @@
 
           <div class="card nextCard">
             <div class="row">
+
               <div class="col-sm-4">
                 <img src="imagens/pessoal_sentado.jpg" alt="Img3" style="width:100%;">
               </div>
+
               <div class="col-sm-8" style="padding: 5px; padding-right: 25px;">
                 <h5>Decisões certas?</h5>
                 <h6 style="color: slategrey; font-size: medium;">Questione certo</h6
                   style="color: slategrey; font-size: medium;">
-                <p>Dados e informações seguras para embasar as decisões do dia a dia são muito importantes.
-                  E essas informações estão vindo do lugar certo?</p>
+
+                <p>Dados e informações seguras são muito importantes.
+                  Essas informações estão vindo do lugar certo?</p>
+
+                  <a href="" class=" btn btn-success btn-sm"
+                  style="color: white; border-radius: 20px; margin-left: 30%;">
+                  Ler Artigo
+                  </a>
+
               </div>
             </div>
           </div>
+          <!-- Fim Cartões -->
         </div>
         <!-- Fim Cartões com Posts -->
 
         <!-- Posts Populares -->
         <div class="col-md-6 postsPopulares text-justify">
-          <h2><b>Posts Populares</b></h2><br>
+          <h4 class="pt-5"><b>Posts Populares</b></h4><br>
           <div>
             <h5>Título da Postagem</h5>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
@@ -421,7 +488,7 @@
         <!-- Fim Posts Populares -->
       </div>
     </div>
-    <!-- Fim Conteúdo da Página -->
+    <!-- Fim Conteúdo da Página geral-->
 
     <!-- Banner principal -->
     <div class="leadsFooter">
@@ -460,8 +527,8 @@
           <p>
             <a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"
                 style="color: white; font-size: xx-large;"></i></a>
-            <a href="https://www.instagram.com/questionecerto/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"
-                style="color: white; font-size: xx-large; margin: 20px;"></i></a>
+            <a href="https://www.instagram.com/questionecerto/" target="_blank"><i class="fa fa-instagram"
+                aria-hidden="true" style="color: white; font-size: xx-large; margin: 20px;"></i></a>
             <a href="#" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"
                 style="color: white; font-size: xx-large;"></i></a>
 
