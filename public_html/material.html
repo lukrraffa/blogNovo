@@ -18,9 +18,19 @@
       overflow: hidden;
       background-color: #27ae60;
     }
-    
-    
   </style>
+
+  <!-- Código do ANALYTICS-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156893619-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-156893619-1');
+  </script>
+
+  <!--Fim do código do ANALYTICS-->
 
 </head>
 
@@ -30,39 +40,40 @@
 
   <div class="modal-dialog modal-dialog-centered">
 
-     <div class="modal-content" style="width: 100%;">
-        <!-- <span class="close text-right">&times;</span> -->
-        <form method="POST" action="https://smtl.gama.academy/leads/f5d1c3f0-39f4-11ea-96ea-713ae26a8736">
-          <div class="form-group">
-            <h4>Baixe agora o Questionario de Avaliação!</h4>
+    <div class="modal-content" style="width: 100%;">
+      <!-- <span class="close text-right">&times;</span> -->
+      <form method="POST" action="https://smtl.gama.academy/leads/f5d1c3f0-39f4-11ea-96ea-713ae26a8736">
+        <div class="form-group">
+          <h4>Baixe agora o Questionario de Avaliação!</h4>
 
-            <br>
-            <div class="imageCapturaLeads"></div>
-            <br>
+          <br>
+          <div class="imageCapturaLeads"></div>
+          <br>
 
-            <label>Seu nome completo:</label>
-            <input id="nome" class="form-control" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$"
-              title="Digite seu nome completo" required />
-            <br>
-            <label>Seu e-mail:</label>
-            <input id="email" class="form-control" name="email" type="email" title="Digite um email válido" required />
+          <label>Seu nome completo:</label>
+          <input id="nome" class="form-control" name="name" type="text" pattern="^\D{2,}\s[\D\s]{2,}$"
+            title="Digite seu nome completo" required />
+          <br>
+          <label>Seu e-mail:</label>
+          <input id="email" class="form-control" name="email" type="email" title="Digite um email válido" required />
 
-            <hr>
-
-
+          <hr>
 
 
 
-            <input name="redirectTo" type="hidden" value="https://drive.google.com/drive/folders/126GWhGprSkPafdSFYgURkaV3Ulx23Zr9"  />
-            <!-- <input id="a" name="debugMode" type="hidden" value="true" /> -->
-
-            <input id="b" class="btn btn-success" type="submit" />
 
 
-          </div>
-        </form>
-      </div>
+          <input name="redirectTo" type="hidden"
+            value="https://drive.google.com/drive/folders/126GWhGprSkPafdSFYgURkaV3Ulx23Zr9" />
+          <!-- <input id="a" name="debugMode" type="hidden" value="true" /> -->
+
+          <input id="b" class="btn btn-success" type="submit" />
+
+
+        </div>
+      </form>
     </div>
+  </div>
   </div>
   <script>
     // Mudar o menu quando estiver em dispositvos Mobile

@@ -13,21 +13,20 @@
   <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
   <style>
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
 
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-    
     @media screen and (max-width: 500px) {
       .topnav a:not(:first-child) {
         display: none;
@@ -60,13 +59,13 @@
 
   <!-- Código do ANALYTICS-->
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156893619-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-156893619-1');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156893619-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-156893619-1');
+  </script>
 
   <!--Fim do código do ANALYTICS-->
 </head>
@@ -91,7 +90,8 @@
 
         <div class="opcoesMenu">
           <a href="Sobrenos.html">Sobre Nós</a>
-          <a href="https://drive.google.com/drive/folders/126GWhGprSkPafdSFYgURkaV3Ulx23Zr9" target="_blank">Materiais Gratuitos</a>
+          <a href="https://drive.google.com/drive/folders/126GWhGprSkPafdSFYgURkaV3Ulx23Zr9" target="_blank">Materiais
+            Gratuitos</a>
           <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
@@ -338,16 +338,15 @@
           </div>
           <hr>
 
-          <!-- <div>
-            <h5>Título da Postagem</h5>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-              sed do
-              eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.
-              <a href="Postagem3.html">Veja Mais</a>
+          <div>
+            <h5>Segmentação de mercado e o impacto em seu
+              negócio!</h5>
+            <p>A segmentação de mercado deverá ser utilizada por empresas para definir
+              estratégias de atuação.
+              <a href="postagem8.html">Veja Mais</a>
             </p>
           </div>
-          <hr> -->
+          <hr>
 
         </div>
         <!-- Fim Posts Populares -->
